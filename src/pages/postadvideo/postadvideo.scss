@@ -1,0 +1,30 @@
+page-postadvideo {
+.cus-vid{
+	margin-top: 10%
+}
+.outer-div{
+	display: table;
+	height: 48%;
+	width: 100%
+}
+.middle-div{
+	display: table-cell;
+	vertical-align: middle;
+	text-align: center;
+}
+.inner-div{
+	display: inline-block;
+}
+.button-div1{
+     width:50%; 
+     float:left
+}
+.button-div2{
+	width:47%;
+	float:right
+
+}
+.but-st{
+	 min-width: 136px!important;
+}
+}

@@ -1,0 +1,144 @@
+
+
+<ion-header>
+    <ion-navbar color="orang" >
+        <button ion-button menuToggle>
+            <ion-icon name="menu"></ion-icon>
+        </button>
+        <ion-title class="text-center" ><span class="title-st font-st ">User Details</span></ion-title>
+    </ion-navbar>
+    <!-- <ion-toolbar>
+        </ion-toolbar> -->
+</ion-header>
+<ion-content  class="content-style">
+    <div class="seg-st">
+        <ion-segment class="segment-st" [(ngModel)]="segment">
+        <ion-segment-button value="MyDetails">
+            {{"details.mydetail" | translate }}
+        </ion-segment-button>
+        <ion-segment-button value="MyAds">
+            {{"details.myads" | translate }}
+        </ion-segment-button>
+        <ion-segment-button value="saved" (click)="onSavedAd()">
+            Saved Ads
+        </ion-segment-button>
+        </ion-segment>
+    </div>
+    <div [ngSwitch]="segment" padding>
+        <div *ngSwitchCase="'MyDetails'">
+            <div  class="image-st">
+                <button (click)="uploadpic(1)"  [disabled]="disable==false" class="button-left-camera" outline round ion-button icon-only>
+                <ion-icon name="camera" ></ion-icon>
+                </button>
+                <img src="img/user.png" height="100px" width="100px" *ngIf="!pic || image==null" alt="No Image">
+                <img src="{{pic}}" height="100px" width="100px" *ngIf="pic && appProvider.current.loginFlag=='email' && image!=null" alt="No Image" >
+                <img src="{{pic}}" height="100px" width="100px" *ngIf="pic && appProvider.current.loginFlag=='social' && image!=null" alt="No Image">
+                <button (click)="uploadpic(2)"  [disabled]="disable==false" class="button-right-gallery" outline round ion-button icon-only>
+                <ion-icon name="images" ></ion-icon>
+                </button>
+            </div>
+            <ion-list no-lines padding-top>
+                <ion-item class="custom-item">
+                    <ion-label class="cus-label"> {{"login.user" | translate}} </ion-label>
+                    <ion-input   type="text" [(ngModel)]="name"  [disabled]="disable==false" ></ion-input>
+                </ion-item>
+                <ion-item class="custom-item" text-wrap>
+                    <ion-label class="cus-label"> {{"register.email" | translate }} </ion-label>
+                    <ion-input [(ngModel)]="email" disabled ></ion-input>
+                </ion-item>
+                <ion-item class="custom-item">
+                    <ion-label class="cus-label"> {{"login.pass" | translate }} </ion-label>
+                    <ion-input  type="password" [(ngModel)]="password"  disabled></ion-input>
+                </ion-item>
+                <ion-item class="custom-item">
+                    <ion-label class="cus-label"> {{"addetail.location" | translate }} </ion-label>
+                    <ion-input    [(ngModel)]="location" [disabled]="disable==false"></ion-input>
+                </ion-item>
+                <ion-item class="custom-item">
+                    <ion-label class="cus-label"> {{"details.postal" | translate }} </ion-label>
+                    <ion-input  type="number" [(ngModel)]="zip_code" [disabled]="disable==false"></ion-input>
+                </ion-item>
+                <ion-item class="custom-item">
+                    <ion-label class="cus-label"> {{"register.contact" | translate }} </ion-label>
+                    <ion-input  type="tel" [(ngModel)]="contact" [disabled]="disable==false"></ion-input>
+                </ion-item>
+            </ion-list>
+            <div class="form-group text-center">
+                <button class="btn cus-btn bg-blue" (click)="editprofile()" *ngIf="edit=='false'">EDIT</button>
+                <button class="btn cus-btn bg-blue" (click)="saveprofile()" *ngIf="edit=='true'">SAVE</button>
+            </div>
+        </div>
+    </div>
+    <div [ngSwitch]="segment">
+        <div *ngSwitchCase="'MyAds'">
+            <div *ngFor="let dataadd of adddata">
+                <video #myvideo width="100%" height="400" controls poster="{{dataadd.thumbnail_image}}" >
+                    <source [src]='getSafeUrl(dataadd.video)' type="video/mp4">
+                </video>
+                <!--  <iframe [src]='getSafeUrl(dataadd.video)'  width="100%" height="50%" ></iframe>  -->
+                <ion-list no-lines>
+                    <ion-item class="custom-item">
+                        <ion-label class="cus-label"> {{"addetail.ad"  | translate}} </ion-label>
+                        <ion-input   [disabled]="disableadd==false" [(ngModel)]="dataadd.ad_title"></ion-input>
+                    </ion-item>
+                    <ion-item class="custom-item">
+                        <ion-label class="cus-label"> {{"addetail.des"  | translate}} </ion-label>
+                        <ion-input  [disabled]="disableadd==false"  [(ngModel)]="dataadd.ad_description"></ion-input>
+                    </ion-item>
+                    <ion-item class="custom-item">
+                        <ion-label class="cus-label"> {{"addetail.cost"  | translate}} </ion-label>
+                        <ion-input  type="number" [disabled]="disableadd==false"  [(ngModel)]="dataadd.cost"></ion-input>
+                    </ion-item>
+                    <ion-item class="custom-item">
+                        <ion-label class="cus-label"> {{"addetail.cat" | translate }} </ion-label>
+                        <ion-input  [disabled]="disableadd==false" [(ngModel)]="dataadd.post_category"></ion-input>
+                    </ion-item>
+                    <ion-item class="custom-item">
+                        <ion-label class="cus-label"> {{"addetail.location"  | translate}} </ion-label>
+                        <ion-input  [disabled]="disableadd==false" [(ngModel)]="dataadd.location"></ion-input>
+                    </ion-item>
+                </ion-list>
+                <div class="form-group text-center">
+                    <button class="btn cus-btn bg-blue" (click)="saveadd(dataadd.id,dataadd.ad_title,dataadd.ad_description,dataadd.cost,dataadd.post_category,dataadd.location)" *ngIf="editaddbtn!='true'">SAVE</button>
+                    <button class="btn cus-btn bg-blue" (click)="editadd()" *ngIf="editaddbtn=='true'">EDIT</button>
+                    <button class="btn cus-btn bg-blue" (click)="OnDeletePostAdd(dataadd)" >Remove</button>
+                </div>
+                <hr>
+            </div>
+        </div>
+    </div>
+    <div [ngSwitch]="segment">
+        <div *ngSwitchCase="'saved'">
+            <div class="full-data">
+            </div>
+            <ion-list *ngFor="let p of ads" >
+                <ion-item (click)="onclickAd(p)" no-lines>
+                    <ion-avatar item-left style="position:relative">
+                        <img height="80px" width="80px" src="{{p.thumbnail_image}}" style="position:relative" class="image-thumbnail">
+                        <img src="img/play-button.png" class="img-play-icon">
+                        <!--  <video #myvideo  loop muted  height="80px" width="80px" poster="{{p.thumbnail_image}}" class="video-st">
+                            <source [src]='getSafeUrl(p.video)' type="video/mp4"> 
+                            </video> -->
+                    </ion-avatar>
+                    <p class="font-st color-st text-left st-font">{{p.ad_title}}</p>
+                    <p class="font-st color-st text-left st-font" text-wrap>{{p.ad_description}}
+                    </p>
+                    <div class="font-st" style="color:white; font-size: 20px;width:auto;position:relative;float:left" >
+                        <img src="img/price-tag.png" height="50px" width="120px">
+                        <span style="position:absolute;left: 20%;position: absolute;top: 26%;">$ {{p.cost}}</span>
+                    </div>
+
+                    <ion-avatar item-right>
+                        <img *ngIf="p.image==null" src="img/user.png" >
+                        <img *ngIf="p.image!=null"  src="{{p.image}}">
+                    </ion-avatar>
+                </ion-item>
+                <ion-item class="lastItem" (click)="onDeleteSaveItem(p)">
+                     <ion-icon style="color: #000" name="trash"> </ion-icon>
+                     <h2 style="color: #000">Remove</h2>
+                </ion-item>
+            </ion-list>
+        </div>
+    </div>
+</ion-content>
+

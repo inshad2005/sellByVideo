@@ -1,0 +1,62 @@
+
+
+<!--
+    Generated template for the Addetails page.
+    
+    See http://ionicframework.com/docs/components/#navigation for more info on
+    Ionic pages and navigation.
+    -->
+<ion-header>
+    <ion-navbar color="orang">
+        <ion-title class="text-center custom-heading">Ad Details</ion-title>
+    </ion-navbar>
+</ion-header>
+<ion-content class="content-style">
+    <form (ngSubmit)="onPostAd()" #addetailsForm="ngForm" novalidate >
+    <ion-list no-lines>
+        <ion-item class="cus-item">
+            <ion-label stacked class="cus-label text-left"> {{"addetail.category" | translate}} </ion-label>
+            <ion-select class="select-st" [(ngModel)]="post_details.post_category" name="category">
+            <ion-option    value="SELECT">SELECT </ion-option>
+            <ion-option  *ngFor="let data of category"  value="{{data.category}}"> {{data.category}} </ion-option>
+            </ion-select>
+        </ion-item>
+        <ion-item class="cus-item">
+            <ion-label stacked class="cus-label text-left"> {{"addetail.title" | translate}} </ion-label>
+            <ion-input name="title" type="text" placeholder="ENTER AD TITLE" class="select-st input-st" [(ngModel)]="post_details.ad_title"></ion-input>
+        </ion-item>
+        <ion-item class="cus-item">
+            <ion-label stacked class="cus-label text-left"> {{"addetail.description" | translate}} </ion-label>
+            <ion-textarea name="description" type="text" placeholder="ENTER AD DESCRIPTION" class="select-st input-st" [(ngModel)]="post_details.ad_description"></ion-textarea>
+        </ion-item>
+        <ion-item class="cus-item">
+            <ion-label stacked class="cus-label text-left"> {{"addetail.cost" | translate}} </ion-label>
+            <ion-input name="cost" type="number" placeholder="ENTER COST" class="select-st input-st" [(ngModel)]="post_details.cost" #cost="ngModel" required></ion-input>
+        </ion-item>
+        <p padding-left style="color: #555;" [hidden]="cost.valid || !cost.touched"> *Not Valid </p>
+        <ion-item class="cus-item">
+            <ion-label stacked class="cus-label text-left"> {{"addetail.negotiatable" | translate}} </ion-label>
+            <ion-select class="select-st" [(ngModel)]="post_details.negotiable" name="negotiable">
+            <ion-option    value="SELECT">SELECT </ion-option>
+            <ion-option value="yes"  selected="true" >YES</ion-option>
+            <ion-option value="no">NO</ion-option>
+            </ion-select>
+        </ion-item>
+        <ion-item class="cus-item">
+            <ion-label stacked class="cus-label text-left"> {{"addetail.location" | translate}} </ion-label>
+            <ion-input type="text" placeholder="ENTER CITY" class="select-st input-st" [(ngModel)]="post_details.location" name="city" (input)="search()"></ion-input>
+        </ion-item>
+        <div style="background:white;z-index: 1;width: calc(100% - 24px);margin-left:16px;">
+            <ion-item text-left style="background:#999;width:100%;"*ngFor="let item of autocompleteItems" 
+            (click)="chooseItem(item.place_id,item.description)">
+            {{item.description}}
+            </ion-item>
+        </div>
+    </ion-list>
+    <div class="text-right button-div">
+        <button class="btn cus-btn bg-blue font-st" type="submit">{{"addetail.post" | translate}}</button>
+    </div>
+    </form>
+    <div #map id="map" style="width:0;height:0;"></div>
+</ion-content>
+

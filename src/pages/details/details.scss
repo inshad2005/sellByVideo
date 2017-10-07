@@ -1,0 +1,170 @@
+page-details {
+
+.seg-st ion-segment-button{
+ border-style: none!important;
+ max-width: 48%!important;
+  color: #555!important;
+}
+.segment .segment-button:first-of-type{
+  border-radius: 0!important;
+}
+.segment .segment-button.segment-activated {
+    background-color:#019771 ;
+    color: #fff!important;
+    opacity: 1;
+    transition: all 100ms linear 0s;
+}
+.image-st{
+  height: 100px;
+  text-align: center;
+  margin: 2% auto;
+}
+.lastItem{
+  border-top:1px solid;
+}
+.item h2 {
+  display: inline-block;
+  font-size: 1.7rem;
+  font-weight: normal;
+  margin: 0 0 2px;
+}
+.cus-label{
+  color: #555;
+    float: left;
+    font-family: "GreycliffCF-DemiBold";
+    text-align: left;
+    width: 40%;    
+}
+.cus-input{
+  width: 50%;
+  float: right;
+}
+.segment-ios .segment-button:last-of-type {
+  border-left-width: 0;
+  border-radius: 0 0px 0px 0;
+  margin-left: 0;
+}
+.segment-ios .segment-button {
+  background-color: transparent;
+  border-color: #488aff;
+  border-style: solid;
+  border-width: 1px;
+  color: #488aff;
+  flex: 1 1 0;
+  font-size: 1.3rem;
+  height: 4.2rem;
+  line-height: 4rem;
+  width: 0;
+  text-transform: uppercase;
+}
+// .label + ion-input .text-input, .label + ion-textarea .text-input, .label + .input + .cloned-input {
+//   text-align: right;
+//   width: calc(100% - 16px / 2 - 16px);
+// }
+.st-font{
+  font-weight: 100
+}
+.full-div {
+    float: left;
+    width: 100%;
+    background:#fff;
+
+}
+.outer-div{
+  position: relative;
+}
+.inner-div{
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+.item ion-avatar ion-img, .item ion-avatar img {
+    border-radius: 50%;
+    height: 65px;
+    overflow: hidden;
+    width: 65px;
+}
+.st-font{
+    font-weight: 100
+}
+.full-div {
+    float: left;
+    width: 100%;
+    background:#fff;
+
+}
+.outer-div{
+    position: relative;
+}
+.inner-div{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+.item ion-avatar ion-img, .item ion-avatar img {
+    border-radius: 50%;
+    height: 65px;
+    overflow: hidden;
+    width: 65px;
+}
+.custom-item{
+    background-color: transparent;
+
+}
+.form-group.text-center {
+    text-align: center;
+}
+.button-left-camera{
+  border: 1px solid #019771;
+  color: #019771;
+  height: 35px;
+  left: 15%;
+  position: absolute;
+  top: 15%;
+  width: 35px;
+}
+.button-right-gallery{
+  border: 1px solid #019771;
+  color: #019771;
+  height: 35px;
+  position: absolute;
+  right: 15%;
+  top: 15%;
+  width: 35px;
+}
+.list-md .item-input.ng-valid.input-has-value:last-child:not(.input-has-focus) {
+    border-bottom-color: transparent!important;
+    box-shadow: none!important;
+}
+.item-md.item-input.ng-invalid.ng-touched:not(.input-has-focus) .item-inner {
+    border-bottom-color: transparent!important;
+    box-shadow: none!important;
+}
+.item-md.item-input.ng-valid.input-has-value:not(.input-has-focus) .item-inner {
+    border-bottom-color: transparent!important;
+    box-shadow:none!important;
+}
+.item-md.item-input.input-has-focus .item-inner{
+  border-bottom-color: transparent!important;
+    box-shadow:none!important;
+}
+.list-md .item-input.input-has-focus:last-child {
+  border-bottom-color: transparent!important;
+  box-shadow: none !important;
+}
+.item-md.item-input.ng-valid.input-has-value:not(.input-has-focus) .item-inner {
+  border-bottom-color: transparent;
+  box-shadow: none;
+}
+.image-thumbnail{
+    position: relative;
+    float: left
+}
+.img-play-icon{
+    height: 30px!important;
+    left: 23%;
+    position: absolute;
+    top: 28%;
+    width: 38px!important;
+}
+}

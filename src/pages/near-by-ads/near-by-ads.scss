@@ -1,0 +1,63 @@
+page-near-by-ads {
+.st-font{
+	font-weight: 100
+}
+.full-div {
+    float: left;
+    width: 100%;
+    background:#fff;
+
+}
+.outer-div{
+	position: relative;
+}
+.inner-div{
+	position: absolute;
+	bottom: 0;
+	right: 0;
+}
+.item ion-avatar ion-img, .item ion-avatar img {
+    border-radius: 50%;
+    height: 65px;
+    overflow: hidden;
+    width: 65px;
+}
+.st-font{
+    font-weight: 100
+}
+.full-div {
+    float: left;
+    width: 100%;
+    background:#fff;
+
+}
+.outer-div{
+    position: relative;
+}
+.inner-div{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+.item ion-avatar ion-img, .item ion-avatar img {
+    border-radius: 50%;
+    height: 65px;
+    overflow: hidden;
+    width: 65px;
+}
+.video-st{
+    border-radius: 125px;
+    -webkit-mask-image: -webkit-radial-gradient(circle, white 100%, black 100%);
+}
+.image-thumbnail{
+    position: relative;
+    float: left
+}
+.img-play-icon{
+    height: 30px!important;
+    left: 23%;
+    position: absolute;
+    top: 28%;
+    width: 38px!important;
+}
+}

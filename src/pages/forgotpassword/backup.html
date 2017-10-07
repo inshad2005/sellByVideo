@@ -1,0 +1,137 @@
+
+  Generated template for the Forgotpassword page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header color="orang">
+<ion-navbar color="orang"  text-center>
+  <ion-title text-center class="text-center custom-heading">Forgot Password</ion-title>
+</ion-navbar>
+</ion-header>
+
+
+<ion-content class="content-style">
+<div class="spacer" style="height:30%"></div>
+<div  *ngIf= "show2">
+     <form [formGroup]="form4">
+<ion-list no-lines>
+<ion-item class="item-st">
+  <ion-label stacked class="font-st color-st text-left">{{"register.email"| translate }}
+  </ion-label>
+  <ion-input type="email" placeholder="Enter Your Email" formControlName="username" style="color:#E1E1E1;" class="input-st"></ion-input>
+
+</ion-item> 
+</ion-list>
+<div class="text-center">
+<button ion-button class="button-st bg-blue" (click)="forgotpswd_btn()">FORGOT PASSWORD</button>
+</div>
+</form>
+</div>
+
+<div  *ngIf= "show">
+     
+ <p class="class1"> Reset Password </p>
+
+<ion-list no-lines>
+<ion-item class="item-st">
+  <ion-label stacked class="font-st color-st text-left">{{"register.email"| translate }}
+  </ion-label>
+     <ion-input type="email" placeholder="Enter Your Email" [(ngModel)]="usernam" style="color:#E1E1E1;" ></ion-input>
+   
+</ion-item> 
+<ion-item class="item-st">
+  <ion-label stacked class="font-st color-st text-left">KEY
+  </ion-label>
+   <ion-input   placeholder="Enter Your Key"  [(ngModel)]= "old_password" style="color:#E1E1E1;" ></ion-input>
+    
+</ion-item> 
+</ion-list>
+<!--  <p style="margin-left: 5%;margin-bottom: -26px" >EMAIL ADDRESS</p>
+<ion-item no-lines class="class2">
+   <ion-label stacked ></ion-label>
+  <ion-input type="email" placeholder="Enter Your Email" [(ngModel)]="usernam" style="color:#E1E1E1;" ></ion-input></ion-item> -->
+
+
+
+
+
+<!--  <p style="margin-left: 5%;margin-bottom: -26px" >Key</p>
+<ion-item no-lines class="class2">
+   <ion-label stacked ></ion-label>
+  <ion-input   placeholder="Enter Your Key"  [(ngModel)]= "old_password" style="color:#E1E1E1;" ></ion-input></ion-item>
+
+
+
+
+ <p style="margin-left: 5%;margin-bottom: -26px" >Password</p>
+<ion-item no-lines class="class2">
+   <ion-label stacked ></ion-label>
+  <ion-input type="password" placeholder="Enter Your Password" [(ngModel)]="password" style="color:#E1E1E1;" ></ion-input></ion-item>
+
+
+
+
+ <p style="margin-left: 5%;margin-bottom: -26px" >Confirm Password</p>
+<ion-item class="class2">
+   <ion-label stacked ></ion-label>
+  <ion-input type="password" placeholder="Confirm your Pasaword"  [(ngModel)] ="confirm_password" style="color:#E1E1E1;" ></ion-input></ion-item>
+
+<button ion-button block style="width:64%;background-color:#019771" (click)= "changepswd()" >Reset Password</button> -->
+</div>
+  </ion-content>
+<!-- <div  *ngIf= "show2" style="border:2px solid #000; width: 93%;height: 208%; margin-left: 4%;
+    margin-top: 4%">
+     <form [formGroup]="form4">
+ <p class="class1"> Forgot Password </p>
+
+
+ <p style="margin-left: 5%;margin-bottom: -26px;padding-top: 58px;" >EMAIL ADDRESS</p>
+<ion-item no-lines class="class2">
+	 <ion-label stacked ></ion-label>
+  <ion-input type="email" placeholder="Enter Your Email" formControlName="username" style="color:#E1E1E1;" ></ion-input></ion-item>
+ </form>
+<button ion-button block style="width:64%;background-color:#019771" (click)=  "forgotpswd_btn()" [disabled]   >Forgot Password</button>
+
+</div>
+
+
+
+<div  *ngIf= "show" style="border:2px solid #000; width: 93%;height: 208%; margin-left: 4%;
+    margin-top: 4%">
+     
+ <p class="class1"> Reset Password </p>
+
+
+ <p style="margin-left: 5%;margin-bottom: -26px" >EMAIL ADDRESS</p>
+<ion-item no-lines class="class2">
+	 <ion-label stacked ></ion-label>
+  <ion-input type="email" placeholder="Enter Your Email" [(ngModel)]="usernam" style="color:#E1E1E1;" ></ion-input></ion-item>
+
+
+
+
+
+ <p style="margin-left: 5%;margin-bottom: -26px" >Key</p>
+<ion-item no-lines class="class2">
+	 <ion-label stacked ></ion-label>
+  <ion-input   placeholder="Enter Your Key"  [(ngModel)]= "old_password" style="color:#E1E1E1;" ></ion-input></ion-item>
+
+
+
+
+ <p style="margin-left: 5%;margin-bottom: -26px" >Password</p>
+<ion-item no-lines class="class2">
+	 <ion-label stacked ></ion-label>
+  <ion-input type="password" placeholder="Enter Your Password" [(ngModel)]="password" style="color:#E1E1E1;" ></ion-input></ion-item>
+
+
+
+
+ <p style="margin-left: 5%;margin-bottom: -26px" >Confirm Password</p>
+<ion-item class="class2">
+	 <ion-label stacked ></ion-label>
+  <ion-input type="password" placeholder="Confirm your Pasaword"  [(ngModel)] ="confirm_password" style="color:#E1E1E1;" ></ion-input></ion-item>
+
+<button ion-button block style="width:64%;background-color:#019771" (click)= "changepswd()" >Reset Password</button>
+</div> 

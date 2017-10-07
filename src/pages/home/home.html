@@ -1,0 +1,32 @@
+
+
+<ion-header>
+    <ion-navbar color="gre">
+        <button ion-button menuToggle>
+            <ion-icon name="menu"></ion-icon>
+        </button>
+    </ion-navbar>
+</ion-header>
+<ion-content padding class="content-style">
+    <ion-card class="custom-card">
+        <div class="table-row text-center">
+            <div class="app-logo">
+                <img src="img/FINAL-SellBuyVideo-Create-GiF1.gif" class="logo-st"/>
+                <img src="img/fianl-gif-logo.png" class="logo-st shadow"/>
+            </div>
+            <div style="position:relative">
+                <p class="salutaion-style">{{"home.message1" | translate}}
+                    <br>
+                    <span style="font-weight:bold">SELL</span> <span>AND</span> <span style="font-weight:bold">BUY</span>
+                    <br>
+                    <span>THROUGH </span> <span style="font-weight:bold">VIDEO!</span>
+                </p>
+            </div>
+        </div>
+        <div padding-none class="button-div">
+            <button   class="btn cus-btn button-st bg-blue"  (click)="onLogin()" >{{"home.sign" | translate}}</button>
+            <button   class="btn cus-btn button-st bg-orange"  (click)="onRegister()">{{"home.reg" | translate}}</button>
+        </div>
+    </ion-card>
+</ion-content>
+

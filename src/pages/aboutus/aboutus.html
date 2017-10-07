@@ -1,0 +1,696 @@
+<!--
+    Generated template for the Aboutus page.
+    
+    See http://ionicframework.com/docs/components/#navigation for more info on
+    Ionic pages and navigation.
+    -->
+<ion-header>
+    <ion-navbar  color="orang">
+        <button ion-button menuToggle>
+            <ion-icon name="menu"></ion-icon>
+        </button>
+        <ion-title class="text-center"><span class="title-st font-st ">About Us</span></ion-title>
+    </ion-navbar>
+</ion-header>
+<ion-content padding class="content-style" text-wrap>
+    <ion-segment [(ngModel)]="segment">
+    <ion-segment-button value="Privacy" (click)="hideContent()">
+        Privacy Policy
+    </ion-segment-button>
+    <ion-segment-button value="terms" (click)="hideContent()">
+        Terms Of Services
+    </ion-segment-button>
+    </ion-segment>
+    <p *ngIf="a!='false'"><span innerHtml="{{about_data}}"></span></p>
+    <div [ngSwitch]="segment">
+        <div *ngSwitchCase="'Privacy'">
+            <div class="spacer" style="height:10px"></div>
+            <h4 class="text-center ">Mobile App Privacy Policy</h4>
+            <p>Last modified: 14 June 2017</p>
+            <h5><u>Introduction</u></h5>
+            <p>SellBuyVideo ("Company" or "We") respects your privacy and are committed to protecting it through our compliance with this policy. This policy describes: </p>
+            <p>The types of information we may collect or that you may provide when you purchase, download, install, register with, access, or use the SellBuyVideo app (the "App").</p>
+            <p>Our practices for collecting, using, maintaining, protecting, and disclosing that information.</p>
+            <p>This policy applies only to information we collect in this App and in email, text, and other electronic communications sent through or in connection with this App. </p>
+            <p>This policy DOES NOT apply to information that:</p>
+            <p>We collect offline or on any other Company apps or websites, including websites you may access through this App. </p>
+            <p>You provide to or is collected by any third party (see [LINK TO "THIRD-PARTY INFORMATION COLLECTION"]).</p>
+            <p>Our websites and apps, and these third parties may have their own privacy policies, which we encourage you to read before providing information on or through them.</p>
+            <p>Please read this policy carefully to understand our policies and practices regarding your information and how we will treat it. If you do not agree with our policies and practices, do not download, register with, or use this App. By downloading, registering with, or using this App, you agree to this privacy policy. This policy may change from time to time (see [LINK TO "CHANGES TO OUR PRIVACY POLICY"]). Your continued use of this App after we make changes is deemed to be acceptance of those changes, so please check the policy periodically for updates. </p>
+            <h5><u>Children Under the Age of 13</u></h5>
+            <p>The App is not intended for children under 13 years of age, and we do not knowingly collect personal information from children under 13. If we learn we have collected or received personal information from a child under 13 without verification of parental consent, we will delete that information. If you believe we might have any information from or about a child under 13, please contact us at [CONTACT INFORMATION].</p>
+            <h5><u>Information We Collect and How We Collect It</u></h5>
+            <p>We collect information from and about users of our App:</p>
+            <p>Directly from you when you provide it to us.<br>
+                Automatically when you use the App.
+            </p>
+            <h5><u>Information You Provide to Us  </u></h5>
+            <p>When you download, register with, or use this App, we may ask you provide information:</p>
+            <p>By which you may be personally identified, such as name, postal address, email address, telephone number, or ANY OTHER INFORMATION THE APP COLLECTS THAT IS DEFINED AS PERSONAL OR PERSONALLY IDENTIFIABLE INFORMATION UNDER AN APPLICABLE LAW ("personal information").</p>
+            <p padding>This information includes: </p>
+            <p>Information that you provide by filling in forms in the App. This includes information provided at the time of registering to use the App, subscribing to our service, posting material, and requesting further services. We may also ask you for information when you enter a contest or promotion sponsored by us, and when you report a problem with the App.</p>
+            <p>Records and copies of your correspondence (including email addresses and phone numbers), if you contact us.</p>
+            <p>Your responses to surveys that we might ask you to complete for research purposes.</p>
+            <p>Details of transactions you carry out through the App and of the fulfillment of your orders. You may be required to provide financial information before placing an order through the App.</p>
+            <p>You may provide information to be published or displayed ("Posted") on public areas of websites you access through the App (collectively, "User Contributions"). Your User Contributions are Posted and transmitted to others at your own risk. Although you may set certain privacy settings for such information by logging into your account profile, please be aware that no security measures are perfect or impenetrable. Additionally, we cannot control the actions of third parties with whom you may choose to share your User Contributions. Therefore, we cannot and do not guarantee that your User Contributions will not be viewed by unauthorized persons.</p>
+            <h5><u>Automatic Information Collection [and Tracking]</u></h5>
+            <p>When you download, access, and use the App, it may use technology to automatically collect:</p>
+            <p><b>Usage Details.</b> When you access and use the App, we may automatically collect certain details of your access to and use of the App, including traffic data, location data, logs, and other communication data and the resources that you access and use on or through the App. </p>
+            <p><b>Device Information.</b> We may collect information about your mobile device and internet connection, including the device's unique device identifier, IP address, operating system, browser type, mobile network information, and the device's telephone number.</p>
+            <p><b>Stored Information and Files.</b> The App also may access metadata and other information associated with other files stored on your device. This may include, for example, photographs, audio and video clips, personal contacts, and address book information.</p>
+            <p><b>Location Information.</b> This App collects real-time information about the location of your device. </p>
+            <p>If you do not want us to collect this information do not download the App or delete it from your device. For more information, see [LINK TO CHOICES ABOUT HOW WE USE AND DISCLOSE YOUR INFORMATION]. Note, however, that opting out of the App's collection of location information will cause its location-based features to be disabled.</p>
+            <p>[We also may use these technologies to collect information about your activities over time and across third-party websites, apps, or other online services (behavioral tracking). Click here [INCLUDE AS LINK TO DO NOT TRACK DISCLOSURES] for information on how you can opt out of behavioral tracking on or through this app and how we respond to browser signals and other mechanisms that enable consumers to exercise choice about behavioral tracking.</p>
+            <h5><u>Information Collection and Tracking Technologies </u></h5>
+            <p>The technologies we use for automatic information collection may include:</p>
+            <p><b>Cookies (or mobile cookies).</b> A cookie is a small file placed on your smartphone. It may be possible to refuse to accept mobile cookies by activating the appropriate setting on your smartphone. However, if you select this setting you may be unable to access certain parts of our App. </p>
+            <p><b>Web Beacons.</b> Pages of the App and our emails may contain small electronic files known as web beacons (also referred to as clear gifs, pixel tags, and single-pixel gifs) that permit the Company, for example, to count users who have visited those pages or opened an email and for other related app statistics (for example, recording the popularity of certain app content and verifying system and server integrity).</p>
+            <h5><u>Third-Party Information Collection</u></h5>
+            <p>When you use the App or its content, certain third parties may use automatic information collection technologies to collect information about you or your device. These third parties may include: </p>
+            <p>Advertisers, ad networks, and ad servers.<br>
+                Analytics companies.<br>
+                Your mobile device manufacturer.<br>
+                Your mobile service provider.
+            </p>
+            <p>These third parties may use tracking technologies to collect information about you when you use this app. The information they collect may be associated with your personal information or they may collect information, including personal information, about your online activities over time and across different websites, apps, and other online services websites. They may use this information to provide you with interest-based (behavioral) advertising or other targeted content. </p>
+            <p>We do not control these third parties' tracking technologies or how they may be used. If you have any questions about an advertisement or other targeted content, you should contact the responsible provider directly. For information about how you can opt out of receiving targeted advertising from many providers, see [LINK TO "CHOICES ABOUT HOW WE USE AND DISCLOSE YOUR INFORMATION"].</p>
+            <h5><u>How We Use Your Information</u></h5>
+            <p>We use information that we collect about you or that you provide to us, including any personal information, to:</p>
+            <p>Provide you with the App and its contents, and any other information, products or services that you request from us.</p>
+            <p>Fulfill any other purpose for which you provide it.</p>
+            <p>Give you notices about your account or subscription, including expiration and renewal notices.</p>
+            <p>Carry out our obligations and enforce our rights arising from any contracts entered into between you and us, including for billing and collection.</p>
+            <p>Notify you when App updates are available, and of changes to any products or services we offer or provide though it.</p>
+            <p>The usage information we collect helps us to improve our App and to deliver a better and more personalized experience by enabling us to:</p>
+            <p>Estimate our audience size and usage patterns.<br>
+                Store information about your preferences, allowing us to customize our App according to your individual interests.<br>
+                Speed up your searches.<br>
+                Recognize you when you use the App.<br>
+            </p>
+            <p>We use location information we collect to provide you with relevant search results, product recommendations, or to display your product to users within a certain radius of your location.</p>
+            <p>We may also use your information to contact you about our own and third parties' goods and services that may be of interest to you. If you do not want us to use your information in this way, please check the relevant box located on the form on which we collect your data (the registration form) or adjust your user preferences in your account profile. For more information, see [LINK TO "CHOICES ABOUT HOW WE USE AND DISCLOSE YOUR INFORMATION"].</p>
+            <p>We may use the information we collect to display advertisements to our advertisers' target audiences. Even though we do not disclose your personal information for these purposes without your consent, if you click on or otherwise interact with an advertisement, the advertiser may assume that you meet its target criteria.</p>
+            <h5><u>Disclosure of Your Information</u></h5>
+            <p>We may disclose aggregated information about our users , and information that does not identify any individual or device, without restriction. </p>
+            <p>In addition, we may disclose personal information that we collect or you provide:
+                To our subsidiaries and affiliates.
+            </p>
+            <p>To contractors, service providers, and other third parties we use to support our business and who are bound by contractual obligations to keep personal information confidential and use it only for the purposes for which we disclose it to them.</p>
+            <p>To a buyer or other successor in the event of a merger, divestiture, restructuring, reorganization, dissolution, or other sale or transfer of some or all of SellBuyVideo's assets, whether as a going concern or as part of bankruptcy, liquidation, or similar proceeding, in which personal information held by SellBuyVideo about our App users is among the assets transferred.</p>
+            <p>To third parties to market their products or services to you if you have not opted out of these disclosures. We contractually require these third parties to keep personal information confidential and use it only for the purposes for which we disclose it to them. For more information, see [LINK TO "CHOICES ABOUT HOW WE USE AND DISCLOSE YOUR INFORMATION"].</p>
+            <p>To fulfill the purpose for which you provide it. </p>
+            <p>For any other purpose disclosed by us when you provide the information.</p>
+            <p>With your consent.</p>
+            <p>To comply with any court order, law, or legal process, including to respond to any government or regulatory request.</p>
+            <p>To enforce our rights arising from any contracts entered into between you and us, including the App Terms of Use, terms of sale [LINK TO APP'S TERMS OF SALE OF GOODS AND SERVICES], and for billing and collection.</p>
+            <p>If we believe disclosure is necessary or appropriate to protect the rights, property, or safety of SellBuyVideo, our customers or others. This includes exchanging information with other companies and organizations for the purposes of fraud protection and credit risk reduction.</p>
+            <h5><u>Your Choices About Our Collection, Use, and Disclosure of Your Information</u></h5>
+            <p>We strive to provide you with choices regarding the personal information you provide to us. This section describes mechanisms we provide for you to control certain uses and disclosures of over your information. </p>
+            <p><b>Tracking Technologies.</b> You can set your browser to refuse all or some browser cookies, or to alert you when cookies are being sent. You can choose whether or not to allow the App to collect information through other tracking technologies by adjusting your user preferences in your account profile. For more information, see [LINK TO "CHOICES ABOUT HOW WE USE AND DISCLOSE YOUR INFORMATION"]. If you disable or refuse cookies or block the use of other tracking technologies, some parts of the App may then be inaccessible or not function properly.</p>
+            <p><b>Location Information.</b> You can choose whether or not to allow the App to collect and use real-time information about your device's location through the device's privacy settings. If you block the use of location information, some parts of the App may then be inaccessible or not function properly.</p>
+            <p><b>Promotion by the Company.</b> If you do not want us to use your CONTACT INFORMATION to promote our own or third parties' products or services, you can opt-out by logging into the App and adjusting your user preferences in your account profile by checking or unchecking the relevant boxes or by sending us an email stating your request to [EMAIL ADDRESS].</p>
+            <p><b>Targeted Advertising by the Company.</b> If you do not want us to use information that we collect or that you provide to us to deliver advertisements according to our advertisers' target-audience preferences, you can opt-out by by logging into the App and adjusting your user advertising preferences in your account profile by checking or unchecking the relevant boxes or by sending us an email stating your request to [EMAIL ADDRESS].</p>
+            <p><b>Disclosure of Your Information for Third-Party Advertising and Marketing.</b> If you do not want us to share your personal information with unaffiliated or non-agent third parties for advertising and marketing purposes, you can opt-out by logging into the App and adjusting your user preferences in your account profile by checking or unchecking the relevant boxes or by sending us an email stating your request to [EMAIL ADDRESS].</p>
+            <p>We do not control third parties' collection or use of your information to serve interest-based advertising. However, these third parties may provide you with ways to choose not to have your information collected or used in this way. You can opt out of receiving targeted ads from members of the Network Advertising Initiative ("NAI") on the NAI's <u>website.</u></p>
+            <h5><u>Accessing and Correcting Your Personal Information</u></h5>
+            <p>You can review and change your personal information by logging into the App and visiting your account profile page.</p>
+            <p>You may also send us an email at [EMAIL ADDRESS] to request access to, correct, or delete any personal information that you have provided to us. We cannot delete your personal information except by also deleting your user account. We may not accommodate a request to change information if we believe the change would violate any law or legal requirement or cause the information to be incorrect.</p>
+            <p>If you delete your User Contributions from the App, copies of your User Contributions may remain viewable in cached and archived pages, or might have been copied or stored by other App users. Proper access and use of information provided on the App, including User Contributions, is governed by our terms of use [LINK TO TERMS OF USE].</p>
+            <h5><u>Your California Privacy Rights</u></h5>
+            <p>California Civil Code Section 1798.83 permits users of our App that are California residents to request certain information regarding our disclosure of personal information to third parties for their direct marketing purposes. To make such a request, please send an email to [EMAIL ADDRESS].</p>
+            <h5><u>Data Security</u></h5>
+            <p>We have implemented measures designed to secure your personal information from accidental loss and from unauthorized access, use, alteration, and disclosure.</p>
+            <p>The safety and security of your information also depends on you. Where we have given you (or where you have chosen) a password for access to certain parts of our App, you are responsible for keeping this password confidential. We ask you not to share your password with anyone. We urge you to be careful about giving out information in public areas of the App like message boards. The information you share in public areas may be viewed by any user of the App.</p>
+            <p>Unfortunately, the transmission of information via the internet and mobile platforms is not completely secure. Although we do our best to protect your personal information, we cannot guarantee the security of your personal information transmitted through our App. Any transmission of personal information is at your own risk. We are not responsible for circumvention of any privacy settings or security measures we provide.</p>
+            <h5><u>Changes to Our Privacy Policy</u></h5>
+            <p>We may update our privacy policy from time to time. If we make material changes to how we treat our users' personal information, we will post the new privacy policy on this page with a notice that the privacy policy has been updated and notify you by email to the email address specified in your account or an in-App alert the first time you use the App after we make the change.</p>
+            <p>The date the privacy policy was last revised is identified at the top of the page. You are responsible for ensuring we have an up-to-date active and deliverable email address for you and for periodically visiting this privacy policy to check for any changes.</p>
+            <h5><u>Contact Information</u></h5>
+            <p>To ask questions or comment about this privacy policy and our privacy practices, contact us at: </p>
+            <p>[EMAIL ADDRESS] </p>
+        </div>
+        <div *ngSwitchCase="'terms'">
+            <div class="spacer" style="height:10px"></div>
+            <h4 class="text-center ">TERMS OF SERVICE</h4>
+            <h5>I. INTRODUCTION</h5>
+            <p>Welcome to SellBuyVideo!</p>
+            <p>SellBuyVideo supports freedom of speech, both on and off the Internet. However, the goal of
+                SellBuyVideo is to provide you with access to the best quality products possible. To ensure a
+                safe, non-offensive environment for all of our users, we have established these Terms of Service,
+                spelling out what you can expect from us and what we expect from you.
+            </p>
+            <p><em><b>By purchasing any products from THE SELLBUYVIDEO NETWORK, by using any of
+                SellBuyVideo’s services, or by accessing any areas of the SellBuyVideo web site at
+                www.SellBuyVideo.com (“Web site”), you agree to be legally bound and to abide by the terms
+                and conditions set forth below.</b></em>
+            </p>
+            <p>SellBuyVideo.com is owned and operated by SellBuyVideo, an Oklahoma company with offices
+                in Tulsa,OK. Any references herein to SellBuyVideo, SellBuyVideo.com, THE
+                SELLBUYVIDEO NETWORK, “we” or “us” shall be deemed to refer to SellBuyVideo.com
+                and/or SellBuyVideo, as applicable under the circumstances.
+            </p>
+            <p>These Terms of Service, our Privacy Policy, and all policies posted from time-to-time on our
+                sites set out the terms on which SellBuyVideo offers you access to and use of our sites, services,
+                applications and tools (collectively “Services”). All policies, including the Privacy Policy, are
+                incorporated into these Terms of Service. You agree to comply with all the above when
+                accessing or using our Services.
+            </p>
+            <p><b>Note to Social Media Users.</b> When purchasing products and services from this Web site, or our
+                other social media pages, and when posting information to or otherwise communicating via that
+                page or your own social media page, your activities online are subject to the Terms of Service,
+                Terms of Use or other terms and conditions imposed by that social media Web site, which may
+                contain terms and conditions different from these Terms of Service. Please see the following
+                pages for further details:<br>
+                • http://www.facebook.com/legal/terms (Facebook’s Terms of Service);<br>
+                • https://twitter.com/tos (Twitter’s Terms of Service);<br>
+                • http://www.google.com/intl/en/policies/terms (Google’s Terms of Service); and<br>
+                • https://policy.pinterest.com/en/terms-of-service (Pinterest’s Terms of Service).
+            </p>
+            <p>All references in these Terms of Service to “SellBuyVideo”, “SellBuyVideo.com” and/or “this
+                Web site” shall be deemed to include both this Web site and any and all social media pages
+                maintained from time-to-time by SellBuyVideo, or its affiliates.
+            </p>
+            <h4>II. MOBILE DEVICES</h4>
+            <p>SellBuyVideo grants you the right to use the Application only for your
+                personal use. You must comply with all applicable laws and third party terms of agreement when
+                using the Application (e.g. your wireless data service agreement). The Application may not
+                contain the same functionality available on the www.SellBuyVideo.com Web site.
+            </p>
+            <p><b>Application Use.</b> SellBuyVideo grants you the right to use the Application only for your
+                personal use. You must comply with all applicable laws and third party terms of agreement when
+                using the Application (e.g. your wireless data service agreement). The Application may not
+                contain the same functionality available on the www.SellBuyVideo.com Web site.
+            </p>
+            <p><b>Intellectual Property-Applications.</b> SellBuyVideo owns, or is the licensee to, all right, title,
+                and interest in and to its Applications, including all rights under patent, copyright, trade secret,
+                trademark, or unfair competition law, and any and all other proprietary rights, including all
+                applications, renewals, extensions, and restorations thereof. You will not modify, adapt,
+                translate, prepare derivative works from, decompile, reverse-engineer, disassemble, or otherwise
+                attempt to derive source code from any Application and you will not remove, obscure, or alter
+                SellBuyVideo’s copyright notice, trademarks or other proprietary rights notices affixed to,
+                contained within, or accessed in conjunction with or by any SellBuyVideo Application.
+            </p>
+            <p><b>Prohibited Countries Policy and Foreign Trade Regulation-Applications.</b> SellBuyVideo
+                Applications or their underlying technology may not be downloaded to or exported or
+                reexported: (a) into (or to a resident or national of) any country subject to United States embargo;
+                (b) to anyone on the US Treasury Department’s list of Specially Designated Nationals or on the
+                US Commerce Department’s Denied Party or Entity List; and (c) to any prohibited country,
+                person, end-user, or entity specified by US Export Laws. When using an ​ SellBuyVideo
+                Application, you are responsible for complying with trade regulations and both foreign and
+                domestic laws (e.g., you are not located in a country that is subject to a US Government
+                embargo, or that has been designated by the US Government as a “terrorist supporting” country,
+                and you are not listed on any US Government list of prohibited or restricted parties).
+            </p>
+            <p><b>Additional Terms.</b> Additional terms and conditions that apply to you based on the mobile
+                device the Application is installed on:
+            </p>
+            <h5>iOS-Apple</h5>
+            <ol>
+                <li>These Terms of Use are an agreement between you and SellBuyVideo, and not with Apple.
+                    Apple is not responsible for the Application and the content thereof.
+                </li>
+                <li>SellBuyVideo grants you the right to use the Application only on an iOS product that you
+                    own or control and as permitted by the Usage Rules set forth in the App Store Terms of
+                    Service.
+                </li>
+                <li>Apple has no obligation whatsoever to furnish any maintenance and support services with
+                    respect to the Application.
+                </li>
+                <li>Apple is not responsible for the investigation, defense, settlement, and discharge of any third
+                    party intellectual property infringement claim.
+                </li>
+                <li>Apple is not responsible for addressing any claims by you or any third party relating to the
+                    Application or your possession and/or use of the Application, including but not limited to: (a)
+                    product liability claims; (b) any claim that the Application fails to conform to any applicable
+                    legal or regulatory requirement; and (c) claims arising under consumer protection or similar
+                    legislation.
+                </li>
+            </ol>
+            <h5>III. ABOUT SellBuyVideo</h5>
+            <p>THE SELLBUYVIDEO NETWORK is a marketplace that allows users to offer, sell and buy just
+                about anything in a variety of pricing formats and locations by posting videos to the
+                SellBuyVideo Web site. The actual contract for sale is directly between the sellers and buyers.
+            </p>
+            <p>While we may provide pricing, shipping, listing, and other guidance in our Services, such
+                guidance is solely informational and you may decide to follow it or not. Also, while we may help
+                facilitate the resolution of disputes through various programs​ ,<em><b> SellBuyVideo has no control over
+                and does not guarantee the existence, quality, safety or legality of items advertised; the truth
+                or accuracy of users’ content or listings; the ability of sellers to sell items; the ability of buyers
+                to pay for items; or that a buyer or seller will actually complete a transaction or return an
+                item ​ .</b></em>
+            </p>
+            <p>If you have a dispute with one or more users, you release us (and our affiliates and subsidiaries,
+                and our and their respective officers, directors, employees and agents) from claims, demands and
+                damages (actual and consequential) of every kind and nature, known and unknown, arising out of
+                or in any way connected with such disputes.<b> In entering into this release you expressly waive
+                any protections that legally may be waived (whether statutory or otherwise) that would
+                otherwise limit the coverage of this release to include only those claims which you may
+                know or suspect to exist in your favor at the time of agreeing to this release.</b>
+            </p>
+            <p>You will indemnify and hold us (and our affiliates and subsidiaries, and our and their respective
+                officers, directors, employees, agents) harmless from any claim or demand, including reasonable
+                legal fees, made by any third party due to or arising out of your breach these Terms of Service,
+                your improper use of the Services or your breach of any law or the rights of a third party.
+            </p>
+            <h5>Using SellBuyVideo</h5>
+            <p>In connection with using or accessing the Services you will not:</p>
+            <ul padding>
+                <li> Post, list or upload content or items in inappropriate categories or areas on our sites;</li>
+                <li> Post adult content of any kind;</li>
+                <li>Breach or circumvent any laws, third party rights or our systems, policies, or determinations of your account status;</li>
+                <li>Use our Services if you are not able to form legally binding contracts (for example if you are under 18), or are temporarily or indefinitely suspended from using our sites, services, applications or tools;</li>
+                <li>Fail to pay for items purchased by you, unless you have a valid reason as set out in an SellBuyVideo policy, for example, the seller has materially changed the item’s description after you bid, a clear typographical error is made, or you cannot contact the seller;</li>
+                <li>Fail to deliver items sold by you, unless you have a valid reason as set out in an SellBuyVideo policy, for example, the buyer fails to follow the posted terms or you cannot contact the buyer;</li>
+                <li>Manipulate the price of any item or interfere with any other user’s listings;</li>
+                <li>Post false, inaccurate, misleading, defamatory, or libelous content;</li>
+                <li>Transfer your SellBuyVideo account and user ID to another party without our consent;</li>
+                <li>Distribute or post spam, unsolicited or bulk electronic communications, chain letters, or pyramid schemes;</li>
+                <li>Distribute viruses or any other technologies that may harm SellBuyVideo, or the interests or property of users;</li>
+                <li>Use any robot, spider, scraper or other automated means to access our Services for any purpose;</li>
+                <li>Bypass our robot exclusion headers, interfere with the working of our Services, or impose an unreasonable or disproportionately large load on our infrastructure;</li>
+                <li>Export or reexport any SellBuyVideo application or tool except in compliance with the export control laws of any relevant jurisdictions and in accordance with posted rules and restrictions;</li>
+                <li>Reproduce, perform, display, distribute, reverse engineer, or prepare derivative works from content that belongs to or is licensed to SellBuyVideo, or that comes from the Services and belongs to another SellBuyVideo user or to a third party including works covered by any copyrights, trademark, patent, or other intellectual property right, except with prior express permission of SellBuyVideo and/or any other party holding the right to license such use;</li>
+                <li>Commercialize any SellBuyVideo application or any information or software associated with such application;</li>
+                <li>Harvest or otherwise collect information about users without their consent; or</li>
+                <li>Circumvent any technical measures we use to provide the Services.</li>
+            </ul>
+            <p>Your postings also must not contain the following:</p>
+            <ul padding>
+                <li><u>Securities/Investor</u> <u>Relations-Related</u> <u>Content</u>. Forward-looking content or comments related to SellBuyVideo or other companies which speak to stock price, financial health or outlook, obligations to investors, or other Investor Relations-related responsibilities;</li>
+                <li><u>Confidential</u> <u>Content</u>. Content which discloses any confidential or nonpublic third party information which you do not have permission and/or authority to disclose;</li>
+                <li><u>Disparaging</u> <u>Content</u>. Content that disparages any person or entity, including SellBuyVideo and any entity affiliated with SellBuyVideo, and/or any of their respective products or services;</li>
+                <li><u>Content</u> <u>Contrary</u> <u>to</u> <u>Law</u> <u>or</u> <u>Public</u> <u>Policy</u>. Content relating to matters that are contrary to law, regulation or public policy in any of the United States, Switzerland, or accounts of the European Union.</li>
+                <li><u>Infringing</u> <u>Content</u>. Content that violates or infringes the rights of any person or entity including, but not limited to, privacy, publicity and/or intellectual property rights, including the copyrights and brand rights of SellBuyVideo and/or of third parties;</li>
+                <li><u>Hateful</u> <u>Content</u>. Content that is hateful, tortious, defamatory, slanderous, libelous, or obscene;</li>
+                <li><u>Discriminatory</u> <u>Content</u>. Content that promotes bigotry, racism, sexism, hatred or harm against any group or individual or promotes discrimination based on race, sex, religion, nationality, disability, sexual orientation or age;</li>
+                <li><u>Spam</u>. We observe and enforce a zero-tolerance policy for posting sales pitches for outside products or services or posting comments that drive traffic to a third party’s Web site (including for personal, political or monetary gain).</li>
+            </ul>
+            <p>If we believe you are abusing SellBuyVideo in any way, we may, in our sole discretion and
+                without limiting other remedies, limit, suspend, or terminate your user account(s) and access to
+                our Services, delay or remove hosted content, remove any special status associated with your
+                account(s), remove and demote listings, reduce or eliminate any discounts, and take technical
+                and/or legal steps to prevent you from using our Services.
+            </p>
+            <p>We may cancel unconfirmed accounts or accounts that have been inactive for a long time or
+                modify or discontinue our Services. Additionally, we reserve the right to refuse or terminate our
+                Services to anyone for any reason at our discretion.
+            </p>
+            <h5>Policy Enforcement</h5>
+            <p>When a buyer or seller issue arises we may consider the user’s performance history and the
+                specific circumstances in applying our policies. We may choose to be more lenient with policy
+                enforcement in an effort to do the right thing for both buyers and sellers.
+            </p>
+            <h5>Listing Conditions</h5>
+            <p>When posting a video listing an item to the SellBuyVideo Web site, you agree that:</p>
+            <dl padding>
+                <li>You are responsible for the accuracy and content of the listing and item offered;</li>
+                <li>Your listing may not be immediately searchable by keyword or category for several hours (or
+                    up to 24 hours in some circumstances). SellBuyVideo can’t guarantee exact listing durations;
+                </li>
+                <li>Content that violates any of SellBuyVideo’s policies may be deleted at SellBuyVideo’s
+                    discretion;
+                </li>
+                <li>We strive to create a marketplace where buyers find what they are looking for. Therefore, the
+                    appearance or placement of listings in search and browse results will depend on a variety of
+                    factors, including, but not limited to:
+                </li>
+                <dd>- Buyer’s location, search query, browsing site, and history;</dd>
+                <dd>- Item’s location, listing format, price and shipping cost, terms of service, end time,
+                    history, and relevance to the user query;
+                </dd>
+                <dd>- Seller’s history, including listing practices, Detailed Seller Ratings, SellBuyVideo
+                    policy compliance, Feedback, and defect rate; and
+                </dd>
+                <dd>- Number of listings matching the buyer’s query.</dd>
+                <li> Some advanced listing upgrades will only be visible on certain Services.</li>
+            </dl>
+            <h5>Purchase Conditions</h5>
+            <p>When buying an item, you agree that:</p>
+            <ul padding>
+                <li>You are responsible for reading the full item listing before making a bid or commitment to
+                    buy.
+                </li>
+                <li>You enter into a legally binding contract to purchase an item when you commit to buy an
+                    item.
+                </li>
+                <li>For motor vehicles and real estate, a bid or offer initiates a nonbinding transaction
+                    representing a buyer’s serious expression of interest in buying the seller’s item and does not
+                    create a formal contract between the buyer and the seller.
+                </li>
+                <li>We do not transfer legal ownership of items from the seller to the buyer.</li>
+                <li>Uniform Commercial Code § 2-401(2) apply to the transfer of ownership between the buyer
+                    and the seller, unless the buyer and the seller agree otherwise.
+                </li>
+                <li>If you purchase that item on a SellBuyVideo site other than SellBuyVideo.com or the
+                    SellBuyVideo app, you are subject to the Terms of Service or User Agreement of that other
+                    SellBuyVideo site with respect to that particular purchase.
+                </li>
+            </ul>
+            <h5>International Buying and Selling; Translation</h5>
+            <p>Many of our Services are accessible to international sellers and buyers. We may offer certain
+                programs, tools, and site experiences of particular interest to international sellers and buyers,
+                such as estimated local currency conversion and international shipping calculation tools. Sellers
+                and buyers are responsible for complying with all laws and regulations applicable to the
+                international sale, purchase, and shipment of items.
+            </p>
+            <p>If you are a seller you authorize us to use automated tools to translate your SellBuyVideo
+                content, in whole or in part, into local languages where such translation solutions are available. If
+                you are a buyer, you may have access to tools which will enable you to translate content at your
+                request. The accuracy and availability of any translation are not guaranteed and you should
+                check your translated listing for accuracy.
+            </p>
+            <h5>IV. TRADEMARKS AND SERVICE MARKS</h5>
+            <p>SellBuyVideo is a trademark of SELLBUYVIDEO, LLC and/or its affiliates. All rights are
+                reserved. These and other SellBuyVideo graphics, logos, service marks and trademarks of
+                SELLBUYVIDEO, LLC and its affiliates may not be used without the prior written consent of
+                SELLBUYVIDEO, LLC or its affiliates, as the case may be. All other trademarks, product
+                names, and company names and logos appearing on this Web site or in any materials relating to
+                our Services are the property of their respective owners.
+            </p>
+            <h5>V. DISCLAIMERS AND LIMITATION OF LIABILITY</h5>
+            <p><em><b>You expressly agree that use of SellBuyVideo’s Services is at your sole risk.</b></em> Neither
+                SELLBUYVIDEO, LLC nor its affiliates nor any of their members, managers, officers,
+                directors, employees, agents, third-party content providers, merchants, advertisers, sponsors, or
+                affiliates (collectively “Providers”), or the like, warrant that this Web site will be uninterrupted
+                or error free, nor do they make any warranty as to any of SellBuyVideo’s Services, or as to the
+                accuracy, reliability, or currency of any information, content, service, or merchandise provided
+                through this Web site.
+            </p>
+            <p><u>Disclaimer</u> <u>of</u> <u>Warranties</u>. SELLBUYVIDEO MAKES NO REPRESENTATION, WARRANTY, OR GUARANTY AS TO THE RELIABILITY, TIMELINESS, QUALITY, SUITABILITY, TRUTH, AVAILABILITY, ACCURACY OR COMPLETENESS OF ANY CONTENT MADE AVAILABLE ON THIS WEBSITE. SELLBUYVIDEO DOES NOT REPRESENT OR WARRANT THAT (A) THE USE OF THIS WEBSITE WILL BE SECURE, TIMELY, UNINTERRUPTED OR ERROR-FREE, (B) THE PRODUCTS WILL MEET YOUR REQUIREMENTS OR EXPECTATIONS, (C) ANY CONTENT, MATERIALS, DATA OR INFORMATION OBTAINED BY YOU THROUGH SELLBUYVIDEO WILL BE ACCURATE OR RELIABLE, (D) THE QUALITY OF ANY PRODUCTS, SERVICES, INFORMATION, CONTENT, OR OTHER MATERIAL PURCHASED OR OBTAINED BY YOU THROUGH SELLBUYVIDEO WILL MEET YOUR REQUIREMENTS OR EXPECTATIONS, (E) ERRORS OR DEFECTS WILL BE CORRECTED, OR (F) SELLBUYVIDEO OR THE SERVER(S) THAT MAKE OUR WEBSITE AVAILABLE ARE FREE OF VIRUSES OR OTHER HARMFUL COMPONENTS. SELLBUYVIDEO’S PRODUCTS AND ALL CONTENT AND INFORMATION MADE AVAILABLE ON THIS WEBSITE ARE PROVIDED TO YOU STRICTLY ON AN “AS IS” BASIS. ALL CONDITIONS, REPRESENTATIONS AND WARRANTIES, WHETHER EXPRESS, IMPLIED, STATUTORY OR OTHERWISE, INCLUDING, WITHOUT LIMITATION, ANY IMPLIED WARRANTY OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, OR NON-INFRINGEMENT OF THIRD PARTY RIGHTS, ARE HEREBY DISCLAIMED TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW BY SELLBUYVIDEO, INC. AND ITS AFFILIATES.</p>
+            <p><u>Limitation</u> <u>of</u> <u>Liability</u>. IN NO EVENT SHALL SELLBUYVIDEO’S AGGREGATE LIABILITY EXCEED THE AMOUNTS ACTUALLY PAID BY AND/OR DUE FROM YOU IN THE THREE (3) MONTH PERIOD IMMEDIATELY PRECEDING THE EVENT GIVING RISE TO SUCH CLAIM. IN NO EVENT SHALL SELLBUYVIDEO OR ITS AFFILIATES BE LIABLE TO ANYONE FOR ANY INDIRECT, PUNITIVE, SPECIAL, EXEMPLARY, INCIDENTAL, CONSEQUENTIAL OR OTHER DAMAGES OF ANY TYPE OR KIND (INCLUDING LOSS OF DATA, REVENUE, PROFITS, USE OR OTHER ECONOMIC ADVANTAGE) ARISING OUT OF, OR IN ANY WAY CONNECTED WITH SELLBUYVIDEO, INCLUDING BUT NOT LIMITED TO THE USE OR INABILITY TO USE THIS WEBSITE, OR FOR ANY CONTENT, MATERIALS OR OTHER INFORMATION OBTAINED FROM OR THROUGH SELLBUYVIDEO, OR FOR ANY INTERRUPTION, INACCURACY, ERROR OR OMISSION, REGARDLESS OF CAUSE IN THE CONTENT, EVEN IF SELLBUYVIDEO OR ITS AFFILIATES HAVE BEEN PREVIOUSLY ADVISED OF THE POSSIBILITY OF SUCH DAMAGES. Certain states and/or jurisdictions do not allow the exclusion of implied warranties or limitation of liability for incidental, consequential or certain other types of damages, so the exclusions set forth above may not apply to you.</p>
+            <p><u>Internet</u> <u>Delays</u>. USE OF THIS WEBSITE MAY BE SUBJECT TO LIMITATIONS, DELAYS, AND OTHER PROBLEMS INHERENT IN THE USE OF THE INTERNET AND ELECTRONIC COMMUNICATIONS. SELLBUYVIDEO IS NOT RESPONSIBLE FOR ANY DELAYS, DELIVERY FAILURES, OR OTHER DAMAGE RESULTING FROM SUCH PROBLEMS.</p>
+            <p><u>Links</u> <u>to</u> <u>Third</u> <u>Party</u> <u>Sites</u>. This Web site contains links to third party sites. These links are provided for convenience purposes and are not under the control of SellBuyVideo. If you choose to link to such third party web sites, SellBuyVideo makes no warranties, either expressed or implied, concerning the content of such sites, including the operations, programming and conduct of transactions over such sites. SellBuyVideo does not warrant that such sites or content are free from any claims of copyright or other infringement or that such sites or content are devoid of viruses. SellBuyVideo disclaims all liability of any kind whatsoever arising out of your use of, or inability to use such third party web sites, the use of your information by such third parties, and the security of information you provide to such third parties.</p>
+            <p><u>Domestic</u> <u>Use</u> <u>Only</u>. SellBuyVideo’s Services are available to you only in the United States, its territories, and possessions. You agree not to use or attempt to use our Services from outside these locations. If you use our Services from outside the United States of America you are solely responsible for compliance with all applicable laws, including without limitation export and import regulations of other countries. Any diversion of any content, information or materials available on this Web site contrary to United States law is prohibited. SellBuyVideo may use technologies to verify your compliance.</p>
+            <h5>VI. CONTENT AND COPYRIGHT OWNERSHIP</h5>
+            <p><b><u>A.</u> <u>Copyright</u> <u>and</u> <u>Limited</u> <u>License</u></b></p>
+            <p>Unless otherwise indicated, this Web site and all content and other materials therein, including,
+                without limitation, the SellBuyVideo logo and all designs, text, graphics, pictures, information,
+                data, software, sound files, other files and the selection and arrangement thereof (collectively,
+                “Site Materials”) are the proprietary property of SellBuyVideo or its licensors or users and are
+                protected by U.S. and international copyright laws.
+            </p>
+            <p>You are granted a limited, non-sublicensable license to access and use this Web site and Site
+                Materials for personal, informational and shopping purposes only. Such license is subject to the
+                Terms of Service and does not include: (a) any resale or commercial use of this Web site or Site
+                Materials; (b) the collection and use of any product listings, pictures or descriptions; (c) the
+                distribution, public performance or public display of any Site Materials; (d) modifying or
+                otherwise making any derivative uses of this Web site and the Site Materials, or any portion
+                thereof; (e) use of any data mining, robots or similar data gathering or extraction methods; (f)
+                downloading (other than the page caching) of any portion of this Web site, the Site Materials or
+                any information contained therein, except as expressly permitted on this Web site; or (g) any use
+                of this Web site or the Site Materials other than for its intended purpose. Any use of this Web
+                site or Site Materials other than as specifically authorized herein, without the prior written
+                permission of SellBuyVideo, is strictly prohibited and will terminate the license granted herein.
+            </p>
+            <p>Such unauthorized use may also violate applicable laws, including, without limitation, copyright
+                and trademark laws and applicable communications regulations and statutes. Unless explicitly
+                stated herein, nothing in these Terms of Service shall be construed as conferring in any manner,
+                whether by implication, estoppel or otherwise, any title or ownership of, or exclusive use-rights
+                to, any intellectual property or other right and any goodwill associated therewith.
+            </p>
+            <p><b><u>B.</u> <u>Digital Millennium Copyright Act (“DMCA”) Notice</u></b></p>
+            <p>If you believe any material available via this Web site infringes a copyright you own or control, you may file a notification of such infringement with our Designated Agent as set forth below.</p>
+            <p>
+                ## SELLBUYVIDEO, INC.<br>
+                ##Attn: DMCA<br>
+                ##Street Address<br>
+                ##City, State Zip, U.S.A.<br>
+                ##E-Mail:info@ SELLBUYVIDEO.COM<br>
+            </p>
+            <p>Please see 17 U.S.C.A. § 512(c)(3) for the requirements of a proper notification. You should note that if you knowingly misrepresent in your notification that the material or activity is infringing, you will be liable for any damages, including costs and attorneys’ fees, incurred by us or the alleged infringer as the result of our relying upon such misrepresentation in removing or disabling access to the material or activity claimed to be infringing.</p>
+            <p>In accordance with the DMCA and other applicable law, SellBuyVideo has also adopted a policy of terminating, in appropriate circumstances and in our sole discretion, users who are deemed to be repeat infringers. SellBuyVideo may also, in its sole discretion, limit access to this Web site and/or terminate the accounts of any users who infringe any intellectual property rights of others, whether or not there is any repeat infringement.</p>
+            <p><b><u>C.</u> <u>Third Party Site Materials</u></b></p>
+            <p>SellBuyVideo may provide third party content on this Web site and links to web pages and content of third parties (collectively, “Third Party Site Materials”) as a service to those interested in this information. We do not control, endorse or adopt any Third Party Site Materials and can make no guarantee as to its accuracy or completeness. You acknowledge and agree that SellBuyVideo is not responsible or liable in any manner for any Third Party Site Materials and undertakes no responsibility to update or review such Third Party Site Materials. You agree to use such Third Party Site Materials contained therein at your own risk.</p>
+            <p><b><u>D.</u> <u> Advertisements and Promotions; Third-Party Services and Services</u></b></p>
+            <p>SellBuyVideo may display advertisements and promotions from third parties on this Web site or may otherwise provide information about or links to third-party products or services. Your business dealings or correspondence with, or participation in promotions of, such third parties, and any terms, conditions, warranties or representations associated with such dealings or promotions, are solely between you and such third party. SellBuyVideo is not responsible or liable for any loss or damage of any sort incurred as the result of such dealings or promotions or as the result of the presence of such non-SellBuyVideo advertisers or third party information on this Web site.</p>
+            <h5>VII. SUBMISSION OF IDEAS</h5>
+            <p>You can submit questions, comments, feedback, suggestions, ideas, plans, notes, drawings, original or creative materials or other information about SellBuyVideo, this Web site and our Services (collectively, “Ideas”). Ideas, whether posted to this Web site or provided to SellBuyVideo by e-mail or otherwise are entirely voluntary, nonconfidential, gratuitous and noncommittal. SellBuyVideo shall own exclusive rights, including all intellectual property rights, and shall be entitled to the unrestricted use and dissemination of Ideas for any purpose, commercial or otherwise, without acknowledgment or compensation to you. Do not send us Ideas if you expect to be paid or want to continue to own or claim rights in them; your Ideas might be great, but we may have already had the same or similar idea and we do not want disputes.</p>
+            <h5>VIII. LINKS</h5>
+            <p>You are granted a limited, nonexclusive right to create text hyperlinks to this Web site for
+                noncommercial purposes, provided such links do not portray SellBuyVideo in a false,
+                misleading, derogatory or otherwise defamatory manner and provided further that the linking site
+                does not contain any obscene, pornographic, sexually explicit or illegal material or any material
+                that is offensive, harassing or otherwise objectionable. This limited right may be revoked at any
+                time. In addition, you may not use SELLBUYVIDEO’S logo or other proprietary graphics to
+                link to this Web site without our express written permission. Further, you may not use, frame or
+                utilize framing techniques to enclose any SellBuyVideo trademark, logo or other proprietary
+                information, including the images found at this Web site, the content of any text or the
+                layout/design of any page or form contained on a page on this Web site without our express
+                written consent. Except as noted above, you are not conveyed any right or license by implication,
+                estoppel or otherwise in or under any patent, trademark, copyright or proprietary right of
+                SellBuyVideo or any third party.
+            </p>
+            <p>SellBuyVideo makes no claim or representation regarding, and accepts no responsibility for, the
+                quality, content, nature or reliability of embedded content, third-party web sites accessible via
+                hyperlink or web sites linking to this Web site. Such sites are not under the control of
+                SellBuyVideo and SellBuyVideo is not responsible for any embedded content or the content of
+                any linked site or any link contained in a linked site, or any review, changes or updates to such
+                sites. SellBuyVideo and its users may provide these links as a convenience to you, but the
+                inclusion of any link does not imply affiliation, endorsement or adoption by SellBuyVideo of
+                any site or any information contained therein. When you visit other sites via links or embedded
+                content, you should understand that our terms and policies no longer govern and that the terms
+                and policies of those third party sites will now apply. You should review the applicable terms
+                and policies, including privacy and data gathering practices, of any site to which you navigatefrom this Web site.
+            </p>
+            <h5>IX. CONFIDENTIALITY</h5>
+            <p>In the course of providing Services and information via this Web site, SellBuyVideo will deliver
+                to you content, materials and other information which is confidential, proprietary to
+                SellBuyVideo, or which constitutes a “trade secret” of SellBuyVideo (“Confidential
+                Information”). You agree that you will hold all Confidential Information in trust for
+                SellBuyVideo, that you will not publish, disseminate or otherwise disclose Confidential
+                Information to any person, firm or entity, and that you will not use Confidential Information to
+                compete with SellBuyVideo or in any other way detrimental to SellBuyVideo. Without limiting
+                the generality of the foregoing, “Confidential Information” includes any and all information
+                relating to SellBuyVideo’s Services, information (whether in written or electronic form)
+                delivered to you in the course of selling Services or rendering services to you, Site Materials,
+                trade secrets, marketing and business plans, strategies, vendors, customers, management and
+                personnel, but does not include information in the public domain other than by reason of a
+                breach of this Agreement. In the event you receive a subpoena or court order to disclose any
+                Confidential Information, you will deliver prompt written notice to SellBuyVideo and will
+                cooperate with our attempts to obtain a protective order or other similar protection for the
+                Confidential Information. This provision shall survive any termination for a period of five (5)
+                years.
+            </p>
+            <h5>X. TERMINATION</h5>
+            <p>Notwithstanding any of these Terms of Service, SellBuyVideo reserves the right, without notice
+                and in its sole discretion, to terminate your license to use this Web site and to block or prevent
+                your future access to, and use of, this Web site.
+            </p>
+            <h5>XI. USAGE BY CHILDREN AND MINORS</h5>
+            <p>SellBuyVideo cannot prohibit minors from visiting this Web site. SellBuyVideo must rely on
+                parents, guardians and those responsible for supervising children under 18 to decide which
+                materials are appropriate for such children to view and/or purchase.
+            </p>
+            <p>SellBuyVideo requires that all purchases be made either: (i) by individuals 18 years of age or
+                older, or (ii) by minors under 18, through a SellBuyVideo authorized affiliated program which
+                permits parents and other guardians to both pay for the purchases of minors, and give verifiable
+                permission for such minors to purchase items on our site and for the collection by us of certain
+                information in accordance with the terms of our privacy policy. EACH TIME YOU PURCHASE
+                PRODUCTS FROM SELLBUYVIDEO, YOU ARE REPRESENTING TO SELLBUYVIDEO
+                THAT YOU ARE EITHER (I) AN INDIVIDUAL 18 YEARS OF AGE OR OLDER, OR (II) A
+                MINOR UNDER 18 WHO IS PURCHASING THROUGH AN SELLBUYVIDEO
+                AUTHORIZED AFFILIATED PROGRAM WHICH PERMITS PARENTS AND OTHER
+                GUARDIANS TO BOTH PAY FOR THE PURCHASES OF MINORS AND GIVEVERIFIABLE PERMISSION FOR SUCH MINORS TO PURCHASE ITEMS ON OUR SITE
+                AND FOR THE COLLECTION BY US OF CERTAIN INFORMATION IN ACCORDANCE
+                WITH THE TERMS OF OUR PRIVACY POLICY.
+            </p>
+            <h5>XII. APPLICABLE LAW</h5>
+            <p>These Terms of Service and this Web site are created and controlled by SellBuyVideo, LLC, a
+                corporation organized in the State of Oklahoma, U.S.A. The laws of the State of Oklahoma,
+                U.S.A. will govern these Terms of Service, without giving effect to any principles of conflicts of
+                laws. You hereby irrevocably and unconditionally consent to submit to the exclusive jurisdiction
+                of the courts of the State of Oklahoma, U.S.A., and of the United States District Court for the
+                District of Oklahoma for any litigation arising out of or relating to use of or purchase made
+                through SellBuyVideo (and agree not to commence any litigation relating thereto except in such
+                courts), waive any objection to the laying of venue of any such litigation in the courts of the
+                State of Oklahoma, U.S.A., and agree not to plead or claim in any court of the State of
+                Oklahoma, U.S.A. that such litigation brought therein has been brought in an inconvenient
+                forum.
+            </p>
+            <h5>XIII. Agreement to Arbitrate</h5>
+            <p><b>You and SellBuyVideo each agree that any and all disputes or claims that have arisen or
+                may arise between you and SellBuyVideo relating in any way to or arising out of this or
+                previous versions of these Terms of Service, your use of or access to SellBuyVideo’s
+                Services, or any products or services sold, offered, or purchased through SellBuyVideo’s
+                Services shall be resolved exclusively through final and binding arbitration, rather than in
+                court. Alternatively, you may assert your claims in small claims court, if your claims
+                qualify and so long as the matter remains in such court and advances only on an individual
+                (nonclass, nonrepresentative) basis.</b> The Federal Arbitration Act governs the interpretation and
+                enforcement of this Agreement to Arbitrate.
+            </p>
+            <p><b>Prohibition of Class and Representative Actions and Nonindividualized Relief</b></p>
+            <p><b>YOU AND SELLBUYVIDEO AGREE THAT EACH OF US MAY BRING CLAIMS
+                AGAINST THE OTHER ONLY ON AN INDIVIDUAL BASIS AND NOT AS A
+                PLAINTIFF OR CLASS MEMBER IN ANY PURPORTED CLASS OR
+                REPRESENTATIVE ACTION OR PROCEEDING. UNLESS BOTH YOU AND
+                SELLBUYVIDEO AGREE OTHERWISE, THE ARBITRATOR MAY NOT
+                CONSOLIDATE OR JOIN MORE THAN ONE PERSON’S OR PARTY’S CLAIMS,
+                AND MAY NOT OTHERWISE PRESIDE OVER ANY FORM OF A CONSOLIDATED,
+                REPRESENTATIVE, OR CLASS PROCEEDING. ALSO, THE ARBITRATOR MAY
+                AWARD RELIEF (INCLUDING MONETARY, INJUNCTIVE, AND DECLARATORY
+                RELIEF) ONLY IN FAVOR OF THE INDIVIDUAL PARTY SEEKING RELIEF AND
+                ONLY TO THE EXTENT NECESSARY TO PROVIDE RELIEF NECESSITATED BY
+                THAT PARTY’S INDIVIDUAL CLAIM(S). ANY RELIEF AWARDED CANNOTAFFECT OTHER USERS.</b>
+            </p>
+            <h5>AFFECT OTHER USERS.</h5>
+            <h5>Arbitration Procedures</h5>
+            <p>Arbitration is more informal than a lawsuit in court. Arbitration uses a neutral arbitrator instead
+                of a judge or jury, and court review of an arbitration award is very limited. However, an
+                arbitrator can award the same damages and relief on an individual basis that a court can award to
+                an individual. An arbitrator should apply the terms of these Terms of Service as a court would.
+                All issues are for the arbitrator to decide, except that issues relating to arbitrability, the scope or
+                enforceability of this Agreement to Arbitrate, or the interpretation of Section 1 of this Agreement
+                to Arbitrate (“Prohibition of Class and Representative Actions and Non-Individualized Relief”),
+                shall be for a court of competent jurisdiction to decide.
+            </p>
+            <p>The arbitration will be conducted by the American Arbitration Association (“AAA”) under its
+                rules and procedures, including the AAA’s Consumer Arbitration Rules (as applicable), as
+                modified by this Agreement to Arbitrate. The AAA’s rules are available at www.adr.org or by
+                calling the AAA at 1-800-778-7879 FREE. The use of the word “arbitrator” in this provision
+                shall not be construed to prohibit more than one arbitrator from presiding over an arbitration:
+                rather, the AAA’s rules will govern the number of arbitrators that may preside over an arbitration
+                conducted under this Agreement to Arbitrate.
+            </p>
+            <p>A party who intends to seek arbitration must first send to the other, by certified mail, a written
+                notice describing the nature of the dispute in reasonable detail (“Notice”). The Notice to
+                SellBuyVideo should be sent to SellBuyVideo, LLC, at PO Box 691901, Tulsa, OK 74169.
+                SellBuyVideo will send any Notice to you to the physical address we have on file associated
+                with your SellBuyVideo account; it is your responsibility to keep your physical address up to
+                date. All information called for in the Notice must be provided, including a description of the
+                nature and basis of the claims the party is asserting and the relief sought.
+            </p>
+            <p>If you and SellBuyVideo are unable to resolve the claims described in the Notice within 30 days
+                after the Notice is sent, you or SellBuyVideo may initiate arbitration proceedings. A form for
+                initiating arbitration proceedings is available on the AAA’s site at www.adr.org. In addition to
+                filing this form with the AAA in accordance with its rules and procedures, the party initiating the
+                arbitration must mail a copy of the completed form to the opposing party. You may send a copy
+                to SellBuyVideo at the following address: SellBuyVideo, Inc, PO Box 691901, Tulsa, OK
+                74169. In the event SellBuyVideo initiates an arbitration against you, it will send a copy of the
+                completed form to the physical address we have on file associated with your SellBuyVideo
+                account. Any settlement offer made by you or SellBuyVideo shall not be disclosed to the
+                arbitrator.
+            </p>
+            <p>The arbitration hearing shall be held in the county in which you reside or at another mutually
+                agreed location. If the value of the relief sought is $10,000 or less, you or SellBuyVideo mayelect to have the arbitration conducted by telephone or based solely on written submissions,
+                which election shall be binding on you and SellBuyVideo subject to the arbitrator’s discretion to
+                require an in-person hearing, if the circumstances warrant. In cases where an in-person hearing is
+                held, you and/or SellBuyVideo may attend by telephone, unless the arbitrator requires otherwise.
+            </p>
+            <p>The arbitrator will decide the substance of all claims in accordance with applicable law,
+                including recognized principles of equity, and will honor all claims of privilege recognized by
+                law. The arbitrator shall not be bound by rulings in prior arbitrations involving different users,
+                but is bound by rulings in prior arbitrations involving the same SellBuyVideo user to the extent
+                required by applicable law. The arbitrator’s award shall be final and binding and judgment on the
+                award rendered by the arbitrator may be entered in any court having jurisdiction thereof.
+            </p>
+            <h5>Costs of Arbitration</h5>
+            <p>Payment of all filing, administration and arbitrator fees will be governed by the AAA’s rules,
+                unless otherwise stated in this Agreement to Arbitrate. If the value of the relief sought is $10,000
+                or less, at your request, SellBuyVideo will pay all filing, administration, and arbitrator fees
+                associated with the arbitration. Any request for payment of fees by SellBuyVideo should be
+                submitted by mail to the AAA along with your Demand for Arbitration and SellBuyVideo will
+                make arrangements to pay all necessary fees directly to the AAA. In the event the arbitrator
+                determines the claim(s) you assert in the arbitration to be frivolous, you agree to reimburse
+                SellBuyVideo for all fees associated with the arbitration paid by SellBuyVideo on your behalf
+                that you otherwise would be obligated to pay under the AAA’s rules.
+            </p>
+            <h5>Severability</h5>
+            <p>With the exception of any of the provisions in Section 1 of this Agreement to Arbitrate
+                (“Prohibition of Class and Representative Actions and Non-Individualized Relief”), if an
+                arbitrator or court decides that any part of this Agreement to Arbitrate is invalid or
+                unenforceable, the other parts of this Agreement to Arbitrate shall still apply. If an arbitrator or
+                court decides that any of the provisions in Section 1 of this Agreement to Arbitrate (“Prohibition
+                of Class and Representative Actions and Non-Individualized Relief”) is invalid or unenforceable,
+                then the entirety of this Agreement to Arbitrate shall be null and void. The remainder of the
+                Agreement and its Legal Disputes Section will continue to apply.
+            </p>
+            <h5>Future Amendments to the Agreement to Arbitrate</h5>
+            <p>Notwithstanding any provision in these Terms of Service to the contrary, you and we agree that
+                if we make any amendment to this Agreement to Arbitrate (other than an amendment to any
+                notice address or site link provided herein) in the future, that amendment shall not apply to any
+                claim that was filed in a legal proceeding against SellBuyVideo prior to the effective date of the
+                amendment. The amendment shall apply to all other disputes or claims governed by the
+                Agreement to Arbitrate that have arisen or may arise between you and SellBuyVideo. We will
+                notify you of amendments to this Agreement to Arbitrate by posting the amended terms onSellBuyVideo.com at least 30 days before the effective date of the amendments and by providing
+                notice through the SellBuyVideo Message Center and/or by email. If you do not agree to these
+                amended terms, you may close your account within the 30 day period and you will not be bound
+                by the amended terms.
+            </p>
+            <h5>XIV. MODIFICATION OF TERMS</h5>
+            <p>SellBuyVideo may update these Terms of Service. We will notify you about significant changes
+                in the way we treat personal information by sending a notice to the primary e-mail address
+                specified in your SellBuyVideo account or by placing a prominent notice on this Web site. You
+                are responsible for regularly reviewing these Terms of Service. Continued use of SellBuyVideo
+                after any such changes shall constitute your irrevocable and unconditional consent to such
+                changes.
+            </p>
+            <h5>XV. NOTICES</h5>
+            <p>SellBuyVideo may give notice by means of a general notice on this Web site, or electronic mail
+                to your e-mail address on record in SellBuyVideo’s account information, or by written
+                communication sent by first class mail or prepaid post to your address on record in
+                SellBuyVideo’s records relating to our clients. Such notice shall be deemed to have been given
+                upon the expiration of 48 hours after mailing or posting (if sent by first class mail or prepaid
+                post) or 12 hours after sending (if sent by email).
+            </p>
+            <h5>XVI. GENERAL</h5>
+            <p>The provisions of these Terms of Service are intended to be severable. If for any reason any
+                provision of these Terms of Service shall be held invalid or unenforceable in whole or in part in
+                any jurisdiction, such provision shall, as to such jurisdiction, be ineffective to the extent of such
+                invalidity or unenforceability without in any manner affecting the validity or enforceability
+                thereof in any other jurisdiction or the remaining provisions hereof in any jurisdiction.
+            </p>
+            <p>No joint venture, partnership, employment, or agency relationship exists between you and
+                SellBuyVideo as a result of these Terms of Service. The failure of SellBuyVideo to enforce any
+                right or provision in these Terms of Service shall not constitute a waiver of such right or
+                provision unless acknowledged and agreed to by SellBuyVideo in writing.
+            </p>
+            <p>These Terms of Service, together with any applicable policies, comprise the entire agreement
+                between you and SellBuyVideo and supersedes all prior or contemporaneous negotiations,
+                discussions or agreements, whether written or oral, between the parties regarding the subject
+                matter contained herein.
+            </p>
+            <p>Headings are for reference purposes only and do not limit the scope or extent of such Section.Our failure to act with respect to a breach by you or others does not waive our right to act with
+                respect to subsequent or similar breaches. We do not guarantee we will take action against all
+                breaches of these Terms of Service.
+            </p>
+            <p>The policies posted on our sites may be changed from time-to-time. Changes take effect when
+                we post them on the SellBuyVideo Web site.
+            </p>
+            <p>If you create or use an account on behalf of a business entity, you represent that you are
+                authorized to act on behalf of such business and bind the business to these Terms of Service.
+                Such account is owned and controlled by the business entity.
+            </p>
+            <p>The following Sections survive any termination of these Terms of Service: Fees, Content,
+                Disclaimer of Warranties; Limitation of Liability; Indemnity, and Legal Disputes.
+            </p>
+            <p>If you are a California resident, in accordance with Cal. Civ. Code § 1789.3, you may report
+                complaints to the Complaint Assistance Unit of the Division of Consumer Services of the
+                California Department of Consumer Affairs by contacting them in writing at 400 R Street,
+                Sacramento, California 95814, or by telephone at (800) 952-5210 FREE.
+            </p>
+        </div>
+    </div>
+    <!-- <p class="color-st font-st" text-wrap>
+        The idea for this app came in 2012 when we decided there must be a more realistic way to promote marketplace classifieds. The inactive, lifeless picture told only half the story of the item. Video is the new norm and only way to capture the authenticity without actually being there, thus SaleBuyVideo was created.
+        </p>
+        <p class="color-st font-st" text-wrap>
+        Wonder no more if something works, functions properly, or is factual because video will help tell the story! SaleBuyVideo was created for those who want to create a more animated Sale, Buy with confidence, and utilize the closest medium to being in person, Video!
+        </p> -->
+</ion-content>
+<ion-footer>
+     <div class="message-st">
+        <span class="font-st color-st">Share with:</span>
+        <ion-icon class="icon-st" (click)="instagram()">
+            <img src="img/instagram.png"  height="35px" width="35px">
+        </ion-icon>
+        <ion-icon class="icon-st" (click)="twitterShare()">
+            <img src="img/twitter(1).png"  height="35px" width="35px">
+        </ion-icon>
+        <ion-icon class="icon-st" (click)="facebookShare()">
+            <img src="img/facebook(1).png"  height="35px" width="35px">
+        </ion-icon>
+        <!-- <ion-icon class="icon-st" (click)="otherShare()">
+            <img src="img/plus(1).png" height="35px" width="35px">
+        </ion-icon> -->
+    </div>
+</ion-footer>

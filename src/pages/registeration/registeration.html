@@ -1,0 +1,77 @@
+
+
+
+
+<ion-header>
+    <ion-navbar color="orang">
+        <button ion-button menuToggle>
+            <ion-icon name="menu"></ion-icon>
+        </button>
+        <ion-title class="text-center" ><span class="title-st">Sign Up</span></ion-title>
+    </ion-navbar>
+</ion-header>
+<ion-content padding-left padding-right class="content-style">
+    <form (ngSubmit)="onRegister()" #registrationForm="ngForm" novalidate >
+
+    <ion-list class="custom-list" no-lines >
+        <ion-item class="cus-item">
+            <p class="heading-style">{{"register.heading" | translate}}</p>
+        </ion-item>
+        <ion-item class="cus-item">
+            <ion-label class="text-style text-left" stacked>{{"register.name" | translate}}</ion-label>
+            <ion-input name="first" type="text" class="custom-input" placeholder="ENTER FULL NAME" [(ngModel)]="register.name" #name="ngModel" required></ion-input>      
+        </ion-item>
+        <p padding-left style="color: #555;" [hidden]="!name.touched || name.valid"> *Please Insert Name </p>
+        <ion-item class="cus-item">
+            <ion-label class="text-style text-left" stacked>{{"register.email" | translate}}</ion-label>
+            <ion-input name="email"  type="email" class="custom-input"  placeholder="ENTER EMAIL" [(ngModel)]="register.email" #email="ngModel" pattern="^[a-zA-Z0-9]+(\.[_a-z0-9]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,15})$" required ></ion-input>
+        </ion-item>
+        <p padding-left style="color: #555;" [hidden]="email.valid || !email.touched"> *Not Valid </p>
+        <ion-item class="cus-item">
+            <ion-label class="text-style text-left" stacked>{{"register.city" | translate}}</ion-label>
+            <ion-input name="city" type="text" class="custom-input" placeholder="ENTER CITY" [(ngModel)]="register.city" #city="ngModel" required></ion-input>
+        </ion-item>
+        <p padding-left style="color: #555;" [hidden]="!city.touched || city.valid"> *Please Insert City </p>
+        <ion-item class="cus-item">
+            <ion-label class="text-style text-left" stacked>{{"details.postal" | translate}}</ion-label>
+            <ion-input name="zip" type="number" class="custom-input" placeholder="ENTER ZIP CODE" [(ngModel)]="register.zip_code" #zip="ngModel" required></ion-input>
+        </ion-item>
+        <p padding-left style="color: #555;" [hidden]="!zip.touched || zip.valid"> *Please Insert Zip Code </p>
+        <ion-item class="cus-item">
+            <ion-label class="text-style text-left" stacked>{{"register.contact" | translate}}</ion-label>
+            <ion-input name="contact" type="number" class="custom-input" placeholder="ENTER CONTACT NO" minlength="10" maxlength="14" [(ngModel)]="register.contact_no" #contact="ngModel" required></ion-input>
+        </ion-item>
+        <p padding-left style="color: #555;" [hidden]="!contact.touched || contact.valid"> *Contact No Must Lies Between 10 to 14</p>
+        <ion-item class="cus-item">
+            <ion-label class="text-style text-left" stacked>{{"login.pass" | translate}}</ion-label>
+            <ion-input name="password" type="password" class="custom-input" placeholder="ENTER PASSWORD" [(ngModel)]="register.password" #password="ngModel" required></ion-input>
+        </ion-item>
+        <p padding-left style="color: #555;" [hidden]="password.valid || !password.touched"> * Please Insert Password</p>
+        <ion-item class="cus-item">
+            <img src="img/user.png" height="100px" width="100px" item-left *ngIf="!base64Image">
+            <img [src]="base64Image"  height="30%" width="30%" item-left *ngIf="base64Image">
+            <ion-icon name="camera" (click)="onAddImage()" class="icon-st"></ion-icon>
+            <ion-icon name="images" (click)="onAddGallery()" class="icon-st"></ion-icon>
+        </ion-item>
+
+        <div text-wrap  style="display: flex; text-align: center;width: 100%;padding-left: 20px " >
+            <ion-checkbox name="check" [(ngModel)]="term_condition" #check="ngModel" (ionChange)="term(term_condition)" style=margin-top:18px;border:1px solid #555></ion-checkbox>
+            <ion-label style="font-size: 11px;color:#555; text-align: left">By creating account,i agree to the <u style="font-size: 12px" (click)="onTermCondition()">Terms & Conditions</u> of SellBuyVideo. Please check-mark the check box  to Agree the  <u style="font-size: 12px" (click)="onTermCondition()">Terms & Conditions</u>
+            </ion-label>
+        </div>
+        <ion-item class="cus-item ">
+            <div class="text-center" style="width: 100%;text-align: center;">
+                <button  class="btn cus-btn bg-blue" full style="height:40px;width:100%" type="submit" [disabled]="registrationForm.form.invalid || !termcondition" >{{"register.reg" | translate}}</button>
+            </div>
+        </ion-item>
+        <ion-item class="cus-item" style="width: 100%;text-align: center;">
+            <div class="">
+                <p>{{"register.already" | translate}} <span (click)="onLogin()" class="color-blue text-but-st"> {{"register.login" | translate}} </span> </p>
+            </div>
+        </ion-item>
+    </ion-list>
+    </form>
+</ion-content>
+
+
+

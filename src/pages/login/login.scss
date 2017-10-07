@@ -1,0 +1,96 @@
+page-login {
+  	.custom-list{
+  		
+  	}
+     .custom-item{
+     	background: transparent;
+
+      }
+      .heading{
+  	   font-family: 'GreycliffCF-DemiBold';
+  	   text-align: center;
+  	   color:#555555;
+  	   font-size: 36px;
+  	   font-weight: 100;
+    }
+    .heading-2{
+    	 font-family: 'GreycliffCF-DemiBold';
+    	 text-align: center;
+    	 color:#555555;
+    	 font-weight: 100;
+    	 font-size: 16px;
+    	 
+    }
+    .custom-input{
+        padding: 0 8px;
+        margin: 0px !important ; 
+        border: 2px solid #555; 
+        background-color: white; 
+        
+    }
+    .text-style{
+    	color:#555!important;
+    	font-family: 'GreycliffCF-DemiBold';
+    	
+    }
+    .cust-width{
+    	min-width: 220px!important;
+    }
+    .custom-font
+    {
+    	font-family: 'GreycliffCF-DemiBold';
+    	 font-weight: lighter;
+    	text-decoration: underline;
+    }
+    .social-button{
+    	  font-family:'GreycliffCF-DemiBold';
+        font-size: 1.5rem!important;
+        height: 35px!important;
+        padding: 0 0.5em;
+        width: 100%;
+        border-radius: 0!important;
+        font-weight: 100;
+        
+    }
+    .fb-button{
+    	background-color: #4867AA;
+    }
+    .google-button{
+    	background-color: #F34A38;
+    }
+    .custom-margin ion-label {
+        margin: 0!important;
+    }
+    .custom-font-st
+    {
+    	font-family: 'GreycliffCF-DemiBold';
+    	 font-weight: lighter;
+    }
+    .img-logo
+    {
+      float: left;
+        margin: 10px 0 -10px;
+        padding-left: 16px;
+        text-align: center;
+        width: 100%;
+    }
+    .img-logo img
+    {
+      display: inline-block;
+      max-width: 275px;
+      width: 100%;
+      margin-top: 10px;
+
+    }
+    .item-md.item-input.input-has-focus .item-inner {
+      border-bottom-color: transparent;
+      box-shadow: none!important;
+    }
+    .item-md.item-input.ng-valid.input-has-value:not(.input-has-focus) .item-inner {
+      border-bottom-color: transparent;
+      box-shadow: none!important;
+    }
+    .label {
+      margin: 0px!important;
+    }
+}

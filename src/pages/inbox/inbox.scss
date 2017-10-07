@@ -1,0 +1,93 @@
+page-inbox {
+.div-st{
+	color:#555;
+	float:left!important;
+	width: 100%
+}
+.span-st{
+	color:#555;
+	float:left!important;
+}
+.text-area{
+		background-color: #fff;
+		border: 1px solid;
+		height: 115px;
+	}
+	.text-center1{
+		float: left;
+		width: 100%;
+		text-align: center;
+	}
+	.bu1{
+		width: 60%;
+		color: white;
+		font-size: 17px;
+		padding: 10px
+
+	}
+
+	.pop-out {
+  background-color: rgba(0, 0, 0, 0.3);
+  bottom: 0;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+.popup-div {
+ background-color: #fff;
+margin: 0 8px;
+padding: 2px 9px;
+position: absolute;
+text-align: center;
+top: 31%;
+width: 90%;
+}
+.button-div{
+	width: 100%	;
+}
+q {
+	color: rgb(85, 85, 85);
+    float: left;
+    margin-bottom: 10px;
+    padding: 4px;
+    text-align: left;
+    width: 100%
+}
+p{
+	 background-color: rgb(255, 255, 255);
+    border-radius: 4px;
+    color: rgb(0, 0, 0);
+    float: left;
+    padding: 10px;
+    text-align: left;
+    width: 100%
+}
+.abc {
+  background-color: #e6e6e6;
+  border-radius: 4px;
+  float: left;
+  padding: 10px;
+  width:100%
+}
+.bu-style{
+	border-radius: 8px;
+    color: white;
+    font-size: 15px;
+    padding: 7px;
+    width: 100%;
+
+}
+.label {
+    border-radius: 0.25em;
+    color: #fff;
+    display: inline;
+    font-size: 75%;
+    font-weight: bold;
+    line-height: 1;
+    padding: 0px;
+    text-align: center;
+    vertical-align: baseline;
+    white-space: nowrap;
+}
+}

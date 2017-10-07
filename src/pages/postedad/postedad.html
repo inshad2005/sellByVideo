@@ -1,0 +1,90 @@
+<!--
+    Generated template for the Postedad page.
+    
+    See http://ionicframework.com/docs/components/#navigation for more info on
+    Ionic pages and navigation.
+    -->
+<ion-header color="orang">
+    <ion-navbar color="orang"  text-center>
+        <ion-title text-center class="text-center custom-heading">{{data.ad_title}}</ion-title>
+        <!-- <ion-title *ngIf="wpage" text-center class="text-center custom-heading">{{data.ads.ad_title}}</ion-title> -->
+    </ion-navbar>
+</ion-header>
+<ion-content class="content-style">
+    <video #myvideo  height="45%" width="100%" controls   poster="{{data.thumbnail_image}}" >
+        <source [src]='getSafeUrl(data.video)' >
+    </video>
+    <ion-item style="background-color: transparent;" no-lines>
+        <ion-label class="text-left font-st color-st" stacked >{{data.post_category}}</ion-label>
+    </ion-item>
+    <div padding-left padding-right>
+        <p class="font-st color-st" >{{data.ad_description}}</p>
+        <div class="font-st color-st text-left cost-div">
+            <span style="margin-top:15px;float:left"> COST </span>
+            <img src="img/price-tag.png" class="img-st">
+            <div class="font-st  text-left pr-div" >$ {{data.cost}}</div>
+        </div>
+        <div class="spacer" style="height:12px"></div>
+        <div class="icon-div-st">
+            <div class="icon-fav margin-left-st" (click)="onSaveItem()">
+                <ion-icon *ngIf="save==0" name="heart" style="color: #019771;
+                    display: inline-block;
+                    font-size: 48px;"></ion-icon>
+                <ion-icon *ngIf="save==1" name="heart" style="color: #F53D3D;
+                    display: inline-block;
+                    font-size: 48px;"></ion-icon>
+                <p class="color-st">Save Item</p>
+            </div>
+            <div class="margin-left-st icon-share" (click)="onShare()">
+                <img src="img/share.png">
+                <p class="color-st">Share Item</p>
+            </div>
+            <div class="margin-left-st icon-report" (click)="onReport()">
+                <img src="img/slating-flag.png">
+                <p class="color-st">Report Item</p>
+            </div>
+        </div>
+        <div class="spacer" style="height:50px"></div>
+        <div class="text-center">
+            <button ion-button full class="bg-blue bu1" (click)="onTextReply()">Contact seller</button>
+        </div>
+    </div>
+    <!-- <video #myvideo  height="45%" width="100%" controls>
+        <source [src]='getSafeUrl(data.ads.video)' type="video/mp4">
+        </video>
+        
+        <ion-item style="background-color: transparent;" no-lines>
+          <ion-label class="text-left font-st color-st" stacked >{{data.ads.post_category}}</ion-label>
+        </ion-item>
+        <div padding-left padding-right>
+        	<p class="font-st color-st" >{{data.ads.ad_description}}</p>
+        	<div class="font-st color-st text-left cost-div"> COST
+        		<div class="font-st  text-left pr-div">$ {{data.ads.cost}}</div>
+        	</div>
+        	<div class="spacer" style="height:12px"></div>
+        	<div class="icon-div-st">
+        		<div class="icon-fav margin-left-st" (click)="onSaveItem()">
+        		<ion-icon *ngIf="save==0" name="heart" style="color: #019771;
+            	display: inline-block;
+            	font-size: 41px;"></ion-icon>
+            	<ion-icon *ngIf="save==1" name="heart" style="color: #F53D3D;
+            	display: inline-block;
+            	font-size: 41px;"></ion-icon>
+        			<p class="color-st">Save Item</p>
+        	</div>
+        	<div class="margin-left-st icon-share">
+        		<img src="img/share.png">
+        		<p class="color-st">Share Item</p>
+        	</div>
+        	<div class="margin-left-st icon-report">
+        		<img src="img/slating-flag.png">
+        		<p class="color-st">Report Item</p>
+        	</div>
+        </div>
+        <div class="spacer" style="height:50px"></div>
+        <div class="text-center">
+           <button ion-button full class="bg-blue bu1" (click)="onTextReply()">Contact seller</button>
+        </div>    
+        </div>
+        </div> -->
+</ion-content>

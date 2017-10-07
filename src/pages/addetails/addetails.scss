@@ -1,0 +1,53 @@
+page-addetails {
+.custom-heading{
+	font-size: 25px;
+  
+    
+    font-family: 'GreycliffCF-DemiBold';
+    color:white;
+    
+
+}
+.input-has-focus .label-md[stacked], .input-has-focus .label-md[floating] {
+  color: #555!important;
+}
+.cus-item{
+	background-color: transparent;
+}
+.cus-label{
+	font-family: 'GreycliffCF-DemiBold';
+	color:#555;
+	font-size: 15px!important;
+	font-weight: 100
+}
+.select-st{
+	border:2px solid #555;
+	background-color: white;
+
+}
+.input-st{
+	border:2px solid #555;
+	padding-left: 10px;
+	background-color: white;
+}
+.button-div{
+	padding-right: 3%
+}
+.item-md.item-input.input-has-focus .item-inner {
+  border-bottom-color: transparent!important;
+  box-shadow:none!important;
+}
+.list-md .item-input.ng-valid.input-has-value:last-child:not(.input-has-focus) {
+    border-bottom-color: transparent!important;
+    box-shadow: none!important;
+}
+.item-label-stacked .select, .item-label-floating .select {
+  padding-bottom: 8px;
+  padding-left: 10px;
+  padding-top: 8px;
+}
+.list-md .item-input.input-has-focus:last-child {
+    border-bottom-color: transparent!important;
+    box-shadow: none!important;
+}
+}

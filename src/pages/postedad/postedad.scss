@@ -1,0 +1,78 @@
+page-postedad {
+.cost-div{
+	float: left;
+	font-size: 20px;
+	font-weight: 100;
+	position: relative;
+	width: 100%;
+}
+.pr-div{
+	color: white;
+	left: 95px;
+	position: absolute;
+	top: 25%;
+}
+.img-st{
+	float: left;
+	height: 65px;
+	left: 25%;
+	margin-left: 10px;
+	width: 115px;
+}
+.inner-div{
+	display: inline-block;
+}
+.button-div1{
+     width:50%; 
+     float:left
+}
+.button-div2{
+	width:47%;
+	float:right
+
+}
+.but-st{
+	 min-width: 136px!important;
+}
+
+.bu2{
+	width:48%;
+	float:right;
+
+}
+.img-st img{
+	max-width: 40%
+
+}
+.icon-div-st{
+	width: 100%;
+	float: left;
+	display: flex;
+}
+.margin-left-st {
+  margin-left: 8%;
+  text-align: center;
+}
+img {
+  border: 0 none;
+  max-width: 60%;
+}
+.margin-left-st > p {
+  padding-top: 14px;
+  font-size: 16px
+}
+.icon-fav{
+width: 29%;
+float: left;
+}
+.icon-share{
+	width:30%;
+}
+.icon-report{
+	width:30%;
+	float:right;
+}
+video::-internal-media-controls-download-button {
+    display:none;
+}
+}

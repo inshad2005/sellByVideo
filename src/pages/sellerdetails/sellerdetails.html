@@ -1,0 +1,82 @@
+
+
+<ion-header>
+    <ion-navbar color="orang">
+        <button ion-button menuToggle>
+            <ion-icon name="menu"></ion-icon>
+        </button>
+        <ion-title class="text-center font-st">
+            <span class="text-center font-st" style="font-size:20px;">Seller Details
+            </span>
+        </ion-title>
+    </ion-navbar>
+</ion-header>
+<ion-content  padding class="content-style" *ngIf="data">
+    <div class="custom-image" *ngIf="!flag">
+        <img class="image-css" *ngIf="data.image==null" src="img/user.png" height="100px" width="100px"  >
+        <img class="image-css" *ngIf="data.image!=null"  src="{{data.image}}" height="100px" width="100px" >
+        <!-- <img class="image-css" src="http://13.58.3.113/sbv/public/upload/users/{{data.image}}" height="100px" width="100px" > -->
+    </div>
+    <div class="custom-image" *ngIf="flag==1">
+        <img class="image-css" *ngIf="data.image=='null'" src="img/user.png" height="100px" width="100px"  >
+        <img class="image-css" *ngIf="data.image!='null'"  src="{{data.image}}" height="100px" width="100px" >
+        <!-- <img class="image-css" src="http://13.58.3.113/sbv/public/upload/users/{{data.image}}" height="100px" width="100px" > -->
+    </div>
+    <div class="spacer" style="height:40px"></div>
+    <div  class="font-st color-st div-left">{{"seller-details.name" | translate}}</div>
+    <div  class="font-st color-st div-right"><span  class="pull-left custom-width" > - </span>   <span class="pull-right kustm-vidth"> {{data.name}} </span> </div>
+    <div class="spacer" style="height: 40px;"></div>
+    <div   class="font-st color-st div-left"> {{"addetail.location" | translate}} </div>
+    <div class="font-st color-st div-right"><span class="pull-left custom-width"> - </span>   <span class="pull-right kustm-vidth"> {{data.city}} </span> </div>
+    <div class="spacer" style="height: 45px;"></div>
+    <div   class="font-st color-st div-left"> {{"details.postal" | translate}} </div>
+    <div class="font-st color-st div-right"><span class="pull-left custom-width"> - </span>   <span class="pull-right kustm-vidth"> {{data.zip_code}} </span> </div>
+    <div class="spacer" style="height: 60px;"></div>
+    <!-- <div class="text-center bg-blue div-st"> {{"seller-details.contact" | translate}}</div> -->
+    <div class="text-center">
+        <button ion-button full class="bg-blue " (click)="showdiv()">Contact seller</button>
+    </div>
+    <div class="spacer" style="height: 30px;"></div>
+    <div>
+    </div>
+    <!-- <div style="text-align:center">
+        <div style="display:inline-flex">
+            <div class="img-st text-center font-st color-st" >
+                <ion-icon (click)="onEmail()" ><img src="img/opened-email-envelope.png"></ion-icon>
+                <br>
+                <span >{{"seller-details.email" | translate}}</span>
+            </div>
+            <div class="img-st text-center font-st color-st" >
+                <ion-icon (click)="onCall()"><img src="img/phone-receiver.png"></ion-icon>
+                <br>
+                <span >{{"seller-details.call" | translate}}</span>
+            </div>
+            <div class="img-st text-center font-st color-st" >
+                <ion-icon (click)="onSMS()"><img src="img/chat-bubbles-with-ellipsis.png"></ion-icon>
+                <br>
+                <span >{{"seller-details.text" | translate}}</span>
+            </div>
+        </div>
+        </div> -->
+    <div *ngIf="display_div==true">
+        <div *ngIf="!flag" class="image-style">
+            <img class="image-css" *ngIf="data.image==null" src="img/user.png" height="40px" width="40px"  >
+            <img class="image-css" *ngIf="data.image!=null"  src="{{data.image}}" height="40px" width="40px" >
+        </div>
+        <div *ngIf="flag==1" class="image-style">
+            <img class="image-css" *ngIf="data.image=='null'" src="img/user.png" height="40px" width="40px"  >
+            <img class="image-css" *ngIf="data.image!='null'"  src="{{data.image}}" height="40px" width="40px" >
+        </div>
+        <div class="text-style font-st color-st">
+            Send {{data.name}} a message:
+        </div>
+        <div class="spacer" style="height:50px"></div>
+        <ion-textarea class="text-area" [(ngModel)]="textData.message">
+        </ion-textarea>
+        <div class="spacer" style="height:10px"></div>
+        <div class="text-center1">
+            <button   class="bg-blue bu1" (click)="onSendText()">Send</button>
+        </div>
+    </div>
+</ion-content>
+

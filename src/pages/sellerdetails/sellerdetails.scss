@@ -1,0 +1,84 @@
+page-sellerdetails {
+	.cus-label{
+		color:#555!important;
+		font-family: 'GreycliffCF-DemiBold';
+	    
+	}
+	.div-left{
+		width:40%; 
+		float:left
+	}
+	.div-right{
+		width:50%; 
+		float:right
+	}
+	.span-margin{
+		margin-right:10px
+	}
+	.div-st{
+		height: 40px;
+		color: white;
+		font-family: 'GreycliffCF-DemiBold';
+		font-size: 28px
+	}
+
+	.img-st img{
+		max-width: 40%
+
+	}
+	.span-email{
+		display: inline-block;
+	}
+	.pull-left.custom-width {
+	  width: 15px;
+	}
+	.pull-right.kustm-vidth {
+	  width: 80px;
+	}
+	.image-style{
+		float: left;
+		width: 15%;
+	}
+	.image-style img{
+		border-radius: 50px;
+	}
+	.text-style{
+	 float: right;
+	    
+	    width: 80%;
+	    font-size: 16px;
+	}
+	.message-div{
+		height:125px;
+		border: 1px solid #555;
+		background-color: #fff;
+		margin: 0 7px;
+
+	}
+	.text-area{
+		background-color: #fff;
+		border: 1px solid;
+		height: 115px;
+	}
+	.text-center1{
+		float: left;
+		width: 100%;
+		text-align: center;
+	}
+	.bu1{
+		width: 60%;
+		color: white;
+		font-size: 17px;
+		padding: 10px
+
+	}
+
+	/////////////// inshad////////////
+	.custom-image{
+		text-align: center;
+	}
+	.custom-image img{	
+	    border-radius: 50px;
+	    vertical-align: middle;
+	}
+}

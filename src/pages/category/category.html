@@ -1,0 +1,44 @@
+
+
+<!--
+    Generated template for the Category page.
+    
+    See http://ionicframework.com/docs/components/#navigation for more info on
+    Ionic pages and navigation.
+    -->
+<ion-header>
+    <ion-navbar color="orang">
+        <button ion-button menuToggle>
+            <ion-icon name="menu"></ion-icon>
+        </button>
+        <ion-title class="text-center" >Category</ion-title>
+    </ion-navbar>
+</ion-header>
+<ion-content padding class="bg-orange">
+    <div class="container-div">
+        <div class="searchabr-st">
+            <ion-input [(ngModel)]="myInput" (input)="search()"  placeholder="Search" class="input-st">
+            </ion-input>
+            <!-- <ion-icon name="search"></ion-icon> -->
+        </div>
+        <div class="button-div">
+            <button ion-button round (click)="onFilter()"> Filter</button>
+        </div>
+    </div>
+    <ion-grid>
+        <div class="category-wrp">
+            <div class="category-inner" *ngFor="let data of category">
+                <div class="img-catg" (click)="advance(data.category)">
+                    <img src="http://13.58.3.113/sbv/public/uploads/category/{{data.image}}" class="img-st"> <br>
+                    <div class="span-st" > {{data.category}} </div>
+                </div>
+            </div>
+        </div>
+    </ion-grid>
+</ion-content>
+<ion-footer>
+    <div class="text-right" style=" padding-right: 20px;">
+        <button class="btn cus-btn bg-blue" (click)="onPostad()">Post An Ad</button>
+    </div>
+</ion-footer>
+

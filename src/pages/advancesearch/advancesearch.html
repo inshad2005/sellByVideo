@@ -1,0 +1,50 @@
+
+
+<ion-header>
+    <ion-navbar color="orang">
+        <ion-title class="text-center">
+            <span class="font-st " style="font-weight:100">
+            ADVANCE SEARCH
+            </span>
+        </ion-title>
+    </ion-navbar>
+</ion-header>
+<ion-content class="content-style">
+    <div class="spacer" style="height:20px"></div>
+    <div padding-top padding-bottom class="bg-white" style="height:40px">
+        <div style="float: right;padding-right: 10px;width: 67%;" class="text-right">
+            <div class=" font-st color-st" (click)="presentActionSheet()">
+                <ion-icon><img src="img/sort-by-attributes.png" style="max-width:50%"></ion-icon>
+                Sort By
+            </div>
+        </div>
+    </div>
+    <div class="full-data">
+    </div>
+    <div class="spacer" style="height:20px"></div>
+    <ion-list *ngFor="let p of newCheck">
+        <ion-item   *ngIf="category==p.post_category" (click)="onclickAd(p)">
+            <ion-avatar item-left style="position:relative">
+                <img height="80px" width="80px" src="{{p.thumbnail_image}}" style="position:relative" class="image-thumbnail">
+                <img src="img/play-button.png" class="img-play-icon">
+            </ion-avatar>
+            <p class="font-st color-st text-left st-font">{{p.ad_title}}</p>
+            <p class="font-st color-st text-left st-font" text-wrap>{{p.ad_description}}
+             </p>
+            <div class="font-st" style="color:white; font-size: 20px;width:auto;position:relative;float:left" >
+                <img src="img/price-tag.png" height="50px" width="120px">
+                <span style="position:absolute;left: 20%;position: absolute;top: 26%;">$ {{p.cost}}</span>
+            </div>
+            <ion-avatar item-right>
+                <img *ngIf="p.image==null || p.image=='null'" src="img/user.png" >
+                <img *ngIf="p.image!=null"  src="{{p.image}}">
+            </ion-avatar>
+        </ion-item>
+    </ion-list>
+    <div *ngIf="newCheck.length==0">
+       <div class="outer-div">
+            <p class="span-text-st"> No post Found</p>   
+       </div>
+    </div>
+</ion-content>
+

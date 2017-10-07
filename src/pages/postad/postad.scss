@@ -1,0 +1,152 @@
+page-postad {
+.custom-heading{
+	font-size: 25px;
+    height: 10%;
+    font-family: 'GreycliffCF-DemiBold';
+    color:white;
+}
+.img-outer{
+display: table;
+height: 38%;
+margin-top: 65px;
+width: 100%;
+}
+.img-inner{
+	display: table-cell;
+	vertical-align: middle;
+	text-align: center;
+}
+.img-clapper{
+	width:100%;
+	float:left;
+}
+.img-clapper img{
+	display: inline-block;
+	max-width: 150px;
+	width: 100%;
+}
+.badge button {
+  background-color: #269A76 ;
+
+  overflow: visible;
+}
+.badge {
+  background-color: #349C79 ;
+  border-radius: 10px;
+  color: #fff;
+  display: inline-block;
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 1;
+  min-width: 10px;
+  padding: 3px 7px;
+  text-align: center;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+.clapper-top > img {
+  margin: 0 5px 0 0;
+  max-width: 143px;
+}
+.clapper-top {
+  display: block;
+  margin: 0 0 -9px;
+}
+.animate-clapper {
+  display: inline-block;
+  width: auto;
+}
+.clapper-top {
+  display: block;
+  margin: 0 0 -9px;
+  transform-origin: 4px 25px 0;
+  transition: all 0.3s ease 0s;
+  transform: rotate(-40deg);
+}
+.animation{
+  -webkit-animation-name: clap; /* Safari 4.0 - 8.0 */
+  -webkit-animation-duration: 1s; /* Safari 4.0 - 8.0 */ 
+  animation-name: clap;
+  animation-duration: 1s;
+}
+@-webkit-keyframes clap {
+    0%   {transform: rotate(-40deg);}
+    100% {transform: rotate(-1deg);}
+}
+
+@keyframes clap {
+    0%   {transform: rotate(-40deg);}
+    100% {transform: rotate(-1deg);}
+}
+
+.pop-out {
+  background-color: rgba(0, 0, 0, 0.3);
+  bottom: 0;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+.popup-div {
+  background-color: #fff;
+  left: 11%;
+  padding: 50px;
+  position: absolute;
+  text-align: center;
+  top: 31%;
+  width: 80%;
+}
+.app-logo {
+    display: inline-block;
+    position: relative;
+  }
+  .logo-st {
+    display: inline-block;
+    margin: 45px auto;
+    max-width: 250px;
+    width: 100%;
+  }
+  .logo-st.shadow {
+    left: 0;
+    position: absolute;
+    top: 0;
+    z-index: -1;
+  }
+  .table-row{
+    display: block;
+    padding-left: 16px
+  }
+  .toolbar-ios ion-title {
+  height: 100%;
+  left: 0;
+  padding: 0 90px 1px;
+  pointer-events: none;
+  position: absolute;
+  top: 0;
+  transform: translateZ(0px);
+  width: 100%;
+}
+.toolbar-md ion-title {
+  height: 100%;
+  left: 0;
+  padding: 0 90px 1px;
+  pointer-events: none;
+  position: absolute;
+  top: 0;
+  transform: translateZ(0px);
+  width: 100%;
+}
+.message{
+  font-size: 2rem;
+    text-align: center;
+    width: 100%;
+}
+.salutaion-style
+  {
+   color: black;
+  font-family: "GreycliffCF-DemiBold";
+  font-size: 25px;
+  font-weight: 200;
+  text-align: center;
+  }
+}

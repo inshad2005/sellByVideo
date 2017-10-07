@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "1022891415449",
+    "firebase_url": "https://sellbuyvideo.firebaseio.com",
+    "project_id": "sellbuyvideo",
+    "storage_bucket": "sellbuyvideo.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1022891415449:android:764d2cb7da3280eb",
+        "android_client_info": {
+          "package_name": "io.ionic.starter"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1022891415449-6bl82aildahttfkjtdf37hi1su739rjj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCV00O4lgaFaBdEGY3e9DIXLD27LYtcRAg"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

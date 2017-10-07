@@ -1,0 +1,25 @@
+
+<ion-menu [content]="content" [swipeEnabled]="false" type="overlay">
+  <ion-header >
+    <ion-toolbar color="orang" >
+      <ion-title style="text-align:center">Menu</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-content style="background-color:#e1e1e1;">
+    <ion-list  no-lines>
+      <button menuClose ion-item *ngFor="let p of pages" (click)="openPage(p)" style="background:transparent;">
+        <p style="color:#555;">{{p.title}}</p>
+      </button>
+      <div class="text-center">
+        <button ion-button *ngIf="disable==true" class="bg-blue" style="border-radius:0px;" (click)="onLogout()">Logout</button>
+      </div>
+    </ion-list>
+  </ion-content>
+
+</ion-menu>
+
+<!-- Disable swipe-to-go-back because it's poor UX to combine STGB with side menus -->
+<ion-nav [root]="rootPage" #content swipeBackEnabled="false">
+  
+</ion-nav>

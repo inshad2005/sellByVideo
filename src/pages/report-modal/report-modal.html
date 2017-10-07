@@ -1,0 +1,49 @@
+<!--
+  Generated template for the ReportModal page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+
+
+<ion-header>
+    <ion-navbar color="orang">
+        <button ion-button left clear (click)="oncancel()" style="color:white">
+        cancel
+        </button>
+        <ion-title style="text-align:center">Select Reason</ion-title>
+    </ion-navbar>
+</ion-header>
+<ion-content padding class="content-style" >
+    <ion-list no-lines radio-group class="list-st" [(ngModel)]="reportdata.description">
+    <ion-item >
+        <ion-radio item-left checked="true"  value="Product already sold" ></ion-radio>
+        <ion-label>Product already sold</ion-label>
+    </ion-item>
+    <ion-item>
+        <ion-radio item-left value="Seller not responding"></ion-radio>
+        <ion-label>Seller not responding</ion-label>
+    </ion-item>
+    <ion-item>
+        <ion-radio item-left value="Ad is duplicate" ></ion-radio>
+        <ion-label>Ad is duplicate</ion-label>
+    </ion-item>
+    <ion-item>
+        <ion-radio item-left value="Wrong Category"  ></ion-radio>
+        <ion-label>Wrong Category</ion-label>
+    </ion-item>
+    <ion-item>
+        <ion-radio item-left value="Offensive content" ></ion-radio>
+        <ion-label>Offensive content</ion-label>
+    </ion-item>
+    <ion-item>
+        <ion-radio item-left value="Fraud reason" ></ion-radio>
+        <ion-label>Fraud reason</ion-label>
+    </ion-item>
+    </ion-list>
+    <ion-footer>
+        <button class="btn cus-btn bg-blue bu" (click)="onReport()">Report</button>
+    </ion-footer>
+</ion-content>
+
+

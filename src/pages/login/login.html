@@ -1,0 +1,60 @@
+
+
+<!--
+    Generated template for the Login page.
+    
+    See http://ionicframework.com/docs/components/#navigation for more info on
+    Ionic pages and navigation.
+    -->
+<ion-header>
+    <ion-navbar color="orang">
+        <button ion-button menuToggle>
+            <ion-icon name="menu"></ion-icon>
+        </button>
+        <ion-title class="text-center" ><span class="title-st">Login</span></ion-title>
+    </ion-navbar>
+</ion-header>
+<ion-content padding-left padding-right class="content-style">
+    <div class="img-logo">
+        <img src="img/FINAL-SellBuyVideoN.png">
+    </div>
+    <ion-list  class="custom-list" no-lines>
+        <ion-item class="custom-item" >
+            <p class="heading-2">{{"login.message1" | translate}}</p>
+        </ion-item>
+        <ion-item class="custom-item">
+            <ion-label class="text-style text-left" stacked>{{"login.user" | translate}}</ion-label>
+            <ion-input type="text" class="custom-input" placeholder="ENTER USERNAME" [(ngModel)]="login.email"></ion-input>
+        </ion-item>
+        <ion-item class="custom-item">
+            <ion-label class="text-style text-left" stacked>{{"login.pass" | translate}}</ion-label>
+            <ion-input type="password" class="custom-input" placeholder="ENTER PASSWORD" [(ngModel)]="login.password"></ion-input>
+        </ion-item>
+        <div class="spacer" style="height:20px"></div>
+        <ion-item class="custom-item">
+            <div class="form-group  ">
+                <button class="btn cus-btn bg-blue cust-width" (click)="onLogin()" >{{"login.sign" | translate}}</button>
+                <div class="spacer" style="height:20px"></div>
+                <p class="color-blue custom-font" (click)="onForgotPassword()" >{{"login.forget" | translate}}</p>
+            </div>
+        </ion-item>
+        <ion-item class="custom-item custom-margin">
+            <button ion-button  class="fb-button social-button" (click)="onLoginWithFb()">
+                <ion-icon name="logo-facebook" icon-right style="margin-right:10px"></ion-icon>
+                {{"login.fb" | translate}}
+            </button>
+        </ion-item>
+        <ion-item class="custom-item custom-margin">
+            <button ion-button  class="google-button social-button" (click)="onLoginWithGoogle()" >
+                <ion-icon name="logo-googleplus" icon-right style="margin-right:10px"></ion-icon>
+                {{"login.google" | translate}}
+            </button>
+        </ion-item>
+        <ion-item class="custom-item">
+            <div class="">
+                <p class="custom-font-st">{{"login.message2" | translate}}  <span  (click)="onRegisteration()" class="color-blue custom-font"> {{"login.signup" | translate}} </span> </p>
+            </div>
+        </ion-item>
+    </ion-list>
+</ion-content>
+

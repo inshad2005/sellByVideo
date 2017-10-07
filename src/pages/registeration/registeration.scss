@@ -1,0 +1,142 @@
+.content-style{
+	background-color:#E1E1E1;
+}
+.font-st{
+	font-family: 'GreycliffCF-DemiBold';
+}
+.color-st{
+	color: #555!important;
+}
+
+
+page-registeration {
+
+	// .custom-card{
+	//    background: transparent none repeat scroll 0 0;
+ //       border: 2px solid #555;
+ //       font-size: 1.4rem;
+ //       position:relative;
+ //       padding: 10px;
+	// }
+	.cus-item{
+		background-color: transparent;
+	}
+.main-div{
+	height:100%;
+	width: 100%;
+	border: solid 2px black;
+
+}
+.custom-list{
+
+	
+	height: auto;
+	 margin-top: 10px;
+}
+.heading-style{
+	font-family: 'GreycliffCF-DemiBold';
+	text-align: center;
+	 
+	 color:#555555;
+	 font-size: 16px;
+}
+.text-style{
+	color:#555!important;
+	font-family: 'GreycliffCF-DemiBold';
+	
+}
+.custom-input{
+    padding: 0 8px;
+    margin: 0px !important ; 
+    border: 2px solid #555;
+    background: #fff none repeat ;  
+}
+.input-div{
+	border:2px solid #555
+}
+
+.next-button-style{
+	 background-color: #488aff;
+    border-radius: 0;
+    color: #fff;
+    font-size: 14px;
+    height: 2.2em;
+    margin: 0.4rem 1.2rem;
+    padding: 0 2em;
+    float:right;
+    box-shadow: 2px 2px 0px 0 rgba(0,0,0,0.2);
+    position: absolute;
+    bottom:30px
+}
+.custom-text{
+bottom: 8px;
+color: #555;
+font-family: "GreycliffCF-DemiBold";
+position: absolute;
+
+}
+.button-div
+{
+	display: flex;
+    float: right;
+    width: 45%;
+}
+.login-button-style{
+	bottom: 0;
+font-size: 14px;
+height: 1.8em;
+position: absolute;
+text-transform: none;
+
+}
+.custom-div{
+	float:left;
+	width: 63%;
+	padding-left: 4%;
+
+}
+.custom-div2
+{
+	float:right;
+	width: 35%
+
+}
+.input-has-focus .label-md[stacked], .input-has-focus .label-md[floating]{
+	color: #555;
+}
+.cus-btn-st{
+	border-radius: 10%;
+    box-shadow: 2px 2px 0 0 rgba(0, 0, 0, 0.2);
+    color: white;
+    font-family: "GreycliffCF-DemiBold";
+    font-size: 14px;
+    min-width: 100px;
+    background-color: #F9A11B;
+    line-height: 90%;
+}
+.text-but-st{
+	text-decoration: underline;
+}
+.icon-st{
+	 color: #E25822;
+    font-size: 42px;
+    margin-left: 16px;
+}
+.item-md.item-input.input-has-focus .item-inner {
+  border-bottom-color: transparent;
+  box-shadow: none!important;
+}
+.item-md.item-input.ng-invalid.ng-touched:not(.input-has-focus) .item-inner {
+  border-bottom-color: transparent;
+  box-shadow: none!important;
+}
+.checkbox-ios .checkbox-icon {
+  
+  border-color: #555;
+}
+.item-md.item-input.ng-valid.input-has-value:not(.input-has-focus) .item-inner {
+  border-bottom-color: transparent;
+  box-shadow: none;
+}
+}
+
